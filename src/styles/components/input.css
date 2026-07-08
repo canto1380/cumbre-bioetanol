@@ -1,0 +1,79 @@
+.bio-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.bio-input-label {
+  display: flex;
+  gap: .25rem;
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.bio-input-required {
+  color: var(--color-danger);
+}
+
+.bio-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: white;
+  transition: .25s;
+}
+
+.bio-input-wrapper:focus-within {
+  border-color: var(--color-primary);
+  box-shadow:
+    0 0 0 4px rgba(29, 122, 74, .08);
+}
+
+.bio-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--color-text);
+}
+
+.bio-input::placeholder {
+  color: var(--color-text-light);
+}
+
+.bio-input-icon {
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+}
+
+.bio-input-helper {
+  color: var(--color-text-light);
+  font-size: .8rem;
+}
+
+.bio-input-error {
+  border-color: var(--color-danger);
+}
+
+.bio-input-error-text {
+  color: var(--color-danger);
+  font-size: .8rem;
+}
+
+/* Sizes */
+
+.bio-input-sm {
+  padding: .7rem .9rem;
+}
+
+.bio-input-md {
+  padding: .9rem 1rem;
+}
+
+.bio-input-lg {
+  padding: 1.1rem 1.2rem;
+}

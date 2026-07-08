@@ -1,0 +1,316 @@
+/* =========================
+   HERO — pantalla completa
+========================= */
+
+.bio-hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  color: white;
+}
+
+/* =========================
+   Background slider
+========================= */
+
+.bio-hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.bio-hero-slide {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1.04);
+  transition:
+    opacity 1.1s ease,
+    transform 8s ease;
+}
+
+.bio-hero-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* =========================
+   Overlay gradiente
+========================= */
+
+.bio-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--gradient-hero-overlay);
+}
+
+.bio-hero-overlay::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 12rem;
+  background: linear-gradient(to top, var(--color-black-100), transparent);
+}
+
+/* =========================
+   Contenido
+========================= */
+
+.bio-hero-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding:
+    7.5rem 1.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: inherit;
+}
+
+.bio-hero-grid {
+  display: grid;
+  align-items: center;
+  flex: 1;
+}
+
+.bio-hero-copy {
+  max-width: 42rem;
+}
+
+/* Badge */
+
+.bio-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: var(--color-black-0);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-border);
+}
+
+/* Título */
+
+.bio-hero-title {
+  margin-top: 1.5rem;
+  font-size: clamp(2.5rem, 6vw, 4.75rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.bio-hero-title span {
+  display: block;
+}
+
+.bio-hero-title-accent {
+  color: var(--color-hero-accent);
+}
+
+.bio-hero-subtitle {
+  margin-top: 1.25rem;
+  max-width: 34rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Meta */
+
+.bio-hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.bio-hero-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bio-hero-meta-item svg {
+  flex-shrink: 0;
+  color: var(--color-hero-accent);
+}
+
+/* CTA cluster */
+
+.bio-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.25rem;
+}
+
+.bio-btn-gradient {
+  align-items: center;
+  border-radius: 999px !important;
+  background: var(--gradient-cta) !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 12px 32px rgba(0, 168, 120, 0.38);
+  padding: 10px 25px;
+  gap: 20px;
+}
+
+.bio-btn-gradient:hover:not(:disabled) {
+  cursor: pointer;
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+.bio-btn-hero-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-border);
+  background: var(--color-black-20);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.bio-btn-hero-ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.65);
+  transform: translateY(-1px);
+}
+
+/* =========================
+   Controles del slider
+========================= */
+
+.bio-hero-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.bio-hero-pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.bio-hero-dot {
+  width: 2rem;
+  height: 0.22rem;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+  cursor: pointer;
+  transition:
+    width 0.25s ease,
+    background 0.25s ease;
+}
+
+.bio-hero-dot-active {
+  width: 2.75rem;
+  background: var(--color-hero-accent);
+}
+
+.bio-hero-arrows {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.bio-hero-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: var(--color-black-20);
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.bio-hero-arrow:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (min-width: 768px) {
+  .bio-hero-inner {
+    padding:
+      8.5rem 2rem 3rem;
+  }
+
+  .bio-hero-meta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bio-hero-inner {
+    padding-top: 9rem;
+  }
+}
+
+/* Secciones placeholder para navegación */
+
+.bio-section-placeholder {
+  min-height: 50vh;
+  padding: 6rem 1.5rem;
+  background: var(--color-background);
+}
+
+.bio-section-placeholder:nth-child(even) {
+  background: var(--color-surface);
+}
+
+.bio-section-placeholder h2 {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-text);
+}

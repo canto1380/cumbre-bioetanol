@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "time": "08:30 - 09:30",
+    "title": "Acreditaciones y Café de Bienvenida",
+    "speaker": "Comité Organizador",
+    "description": "Recepción de participantes y entrega de material institucional."
+  },
+  {
+    "id": 2,
+    "time": "09:30 - 11:00",
+    "title": "Panel: Políticas Públicas y el Futuro del Bioetanol",
+    "speaker": "Representantes gubernamentales y directores del sector",
+    "description": "Análisis del marco regulatorio actual y proyecciones de incremento de corte en Argentina."
+  },
+  {
+    "id": 3,
+    "time": "11:30 - 13:00",
+    "title": "Conferencia: Eficiencia y Sustentabilidad en el Ingenio",
+    "speaker": "Ing. Expertos en Procesos Industriales",
+    "description": "Optimización energética en laboratorios y plantas de destilación de caña de azúcar."
+  }
+]

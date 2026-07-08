@@ -1,0 +1,159 @@
+.bio-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+
+  border: none;
+  border-radius: var(--radius-md);
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: all .25s ease;
+}
+
+.bio-btn:disabled {
+  cursor: not-allowed;
+  opacity: .7;
+}
+
+/* ========================= */
+/* Sizes */
+/* ========================= */
+
+.bio-btn-sm {
+
+  padding: .55rem 1rem;
+  font-size: .875rem;
+
+}
+
+.bio-btn-md {
+
+  padding: .85rem 1.4rem;
+  font-size: .95rem;
+
+}
+
+.bio-btn-lg {
+
+  padding: 1rem 1.8rem;
+  font-size: 1rem;
+
+}
+
+.bio-btn-xl {
+
+  padding: 1.15rem 2.2rem;
+  font-size: 1.1rem;
+
+}
+
+/* ========================= */
+/* Width */
+/* ========================= */
+
+.bio-btn-full {
+
+  width: 100%;
+
+}
+
+/* ========================= */
+/* Variants */
+/* ========================= */
+
+.bio-btn-primary {
+
+  background: var(--color-primary);
+  color: white;
+
+}
+
+.bio-btn-primary:hover:not(:disabled) {
+
+  background: var(--color-primary-dark);
+
+}
+
+.bio-btn-secondary {
+
+  background: var(--color-secondary);
+  color: white;
+
+}
+
+.bio-btn-secondary:hover:not(:disabled) {
+
+  filter: brightness(.95);
+
+}
+
+.bio-btn-outline {
+
+  background: transparent;
+  color: var(--color-primary);
+
+  border: 2px solid var(--color-primary);
+
+}
+
+.bio-btn-outline:hover:not(:disabled) {
+
+  background: var(--color-primary);
+  color: white;
+
+}
+
+.bio-btn-ghost {
+
+  background: transparent;
+  color: var(--color-primary);
+
+}
+
+.bio-btn-ghost:hover:not(:disabled) {
+
+  background: rgba(0,0,0,.05);
+
+}
+
+.bio-btn-danger {
+
+  background: var(--color-danger);
+  color: white;
+
+}
+
+.bio-btn-danger:hover:not(:disabled) {
+
+  filter: brightness(.9);
+
+}
+
+/* ========================= */
+/* Spinner */
+/* ========================= */
+
+.bio-btn-spinner {
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.4);
+  border-top-color: white;
+
+  animation: bio-spin .7s linear infinite;
+
+}
+
+@keyframes bio-spin {
+
+  to {
+      transform: rotate(360deg);
+  }
+
+}

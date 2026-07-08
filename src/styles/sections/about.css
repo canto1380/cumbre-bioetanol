@@ -1,0 +1,213 @@
+/* =======================================================
+   About Section
+======================================================= */
+
+.bio-about {
+  padding: 1rem 0;
+  background: #f8fcfb;
+}
+
+/* =======================================================
+   Layout
+======================================================= */
+
+.bio-about-grid {
+  padding: 0px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem 2rem;
+}
+
+/* =======================================================
+   Card
+======================================================= */
+
+.bio-about-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid #dbe8e4;
+  border-radius: 1.75rem;
+  box-shadow: 0 12px 35px rgba(18, 38, 63, .08);
+}
+
+/* =======================================================
+   Fecha / Lugar
+======================================================= */
+
+.bio-about-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  margin-bottom: 2.5rem;
+}
+
+.bio-about-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.bio-about-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 35%;
+  background: #e8f8f1;
+  color: var(--color-primary);
+}
+
+.bio-about-item-label {
+  display: block;
+
+  margin-bottom: .35rem;
+
+  font-size: .80rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+
+  text-transform: uppercase;
+
+  color: #6b7280;
+}
+
+.bio-about-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+
+  color: var(--color-text);
+
+  margin: 0;
+}
+
+/* =======================================================
+   Content
+======================================================= */
+
+.bio-about-content {
+  flex: 1;
+}
+
+.bio-about-content h3 {
+  margin-bottom: 1.25rem;
+
+  font-size: 2rem;
+  font-weight: 700;
+
+  color: var(--color-text);
+}
+
+.bio-about-content p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+
+  color: #5d6b78;
+
+  margin-bottom: 2rem;
+}
+
+/* =======================================================
+   Button
+======================================================= */
+
+.bio-about-card .bio-btn {
+  align-self: flex-start;
+}
+
+/* =======================================================
+   Map
+======================================================= */
+
+.bio-about-map {
+  overflow: hidden;
+
+  min-height: 100%;
+
+  border-radius: 1.75rem;
+
+  border: 1px solid #dbe8e4;
+
+  box-shadow: 0 12px 35px rgba(18, 38, 63, .08);
+}
+
+.bio-about-map iframe {
+  width: 100%;
+  height: 100%;
+
+  min-height: 520px;
+
+  border: 0;
+
+  display: block;
+}
+
+/* =======================================================
+   Responsive
+======================================================= */
+
+@media (max-width: 992px) {
+
+  .bio-about {
+    padding: 5rem 0;
+  }
+
+  .bio-about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-about-card {
+    padding: 2rem;
+  }
+
+  .bio-about-info {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .bio-about-map iframe {
+    min-height: 420px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .bio-about {
+    padding: 4rem 0;
+  }
+
+  .bio-about-card {
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+  }
+
+  .bio-about-map {
+    border-radius: 1.25rem;
+  }
+
+  .bio-about-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .bio-about-content p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .bio-about-item h4 {
+    font-size: 1.15rem;
+  }
+
+  .bio-about-map iframe {
+    min-height: 320px;
+  }
+
+}

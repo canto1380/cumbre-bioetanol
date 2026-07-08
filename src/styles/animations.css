@@ -1,0 +1,27 @@
+.hover-lift {
+  transition: all .35s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+}
+
+.hover-scale {
+  transition: .3s;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+.transition-default {
+  transition: all .3s ease;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}

@@ -1,0 +1,135 @@
+:root {
+
+  /* ========= MARCA ========= */
+
+  --color-primary: #1D7A4A;
+  --color-primary-dark: #155D38;
+
+  --color-secondary: #0B5FA5;
+
+  --color-accent: #7BC043;
+
+  /*
+  HOVER BOTONES LINK NAVBAR
+  */
+  --color-hero-accent: #A3E635;
+
+  /*
+  ACTIVE BOTONES LINK CON SCROLL
+  BACKGROUND MENU NAVBAR MOBILE CON SCROLL
+  */
+  --color-hero-overlay: rgba(8, 42, 36, 0.72);
+
+  --gradient-hero-overlay:
+    linear-gradient(105deg,
+      rgba(6, 38, 32, 0.92) 0%,
+      rgba(8, 52, 44, 0.78) 38%,
+      rgba(10, 60, 50, 0.45) 68%,
+      rgba(12, 68, 56, 0.25) 100%);
+
+  /*
+    * BACKGROUND BOTON INSCRIPCION
+    */
+  --gradient-cta:
+    linear-gradient(135deg, #007554 0%, #48a888 45%, #34D399 100%);
+
+
+  --shadow-btn: rgba(0, 168, 120, 0.35);
+  --shadow-navbar-scroll-1:  rgba(255, 255, 255, 0.1);
+  --shadow-navbar-scroll-2: rgba(0, 0, 0, 0.22);
+  /* ========= NEUTRALS ========= */
+
+  /*
+  BACKGROUND MENU NAVBAR MOBILE
+  BOTONES LINK MOBILE
+  */
+  --color-background: #F8FAFC;
+
+  /*
+  BACKGROUND NAVBAR CON SCROLL
+  */
+  --color-surface: #FFFFFF;
+
+  --color-surface-alt: #F1F5F9;
+
+  --color-text: #1E293B;
+
+  --color-text-light: #64748B;
+
+  /*
+  ACTIVE BOTONES LINK
+  */
+  --color-border: #E2E8F0;
+
+  /*
+  * 
+  */
+  --color-black-0: rgba(73, 73, 73, 0.08);
+  
+  --color-black-10: rgba(73, 73, 73, 0.1);
+  
+  /*
+  BADGE
+  */
+  --color-black-20: rgba(73, 73, 73, 0.12);
+
+  /*
+    GRADIENTE PARA HERO
+  */
+  --color-black-100: rgba(73, 73, 73, 0.356);
+  
+  /*
+  * BOTONES LINK CON SCROLL
+  */
+  --color-black-200: rgb(29, 29, 29);
+
+  --color-black-300: rgb(21, 21, 21);
+
+  /*
+  * BOTONES HAMBURGUESA CON SCROLL
+  */
+  --color-black-400: rgb(0, 0, 0);
+
+
+
+  /* ========= STATUS ========= */
+
+  --color-success: #16A34A;
+
+  --color-warning: #EAB308;
+
+  --color-danger: #DC2626;
+
+
+
+  /* ========= TYPOGRAPHY ========= */
+
+  --font-family:
+    "Inter",
+    system-ui,
+    sans-serif;
+
+  /* ========= RADIUS ========= */
+
+  --radius-xs: .5rem;
+
+  --radius-sm: .75rem;
+
+  --radius-md: 1rem;
+
+  --radius-lg: 1.5rem;
+
+  --radius-xl: 2rem;
+
+  /* ========= SHADOW ========= */
+
+  --shadow-sm:
+    0 2px 8px rgb(15 23 42 / .06);
+
+  --shadow-md:
+    0 8px 30px rgb(15 23 42 / .08);
+
+  --shadow-lg:
+    0 20px 50px rgb(15 23 42 / .12);
+
+}

@@ -1,0 +1,8 @@
+@import "./theme.css";
+@import "./globals.css";
+@import "./components.css";
+@import "./animations.css";
+@import "./layout/navbar.css";
+@import "./sections/hero.css";
+@import "./components/sectionTitle.css";
+@import "./sections/about.css"

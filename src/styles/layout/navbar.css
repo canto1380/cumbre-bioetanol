@@ -1,0 +1,260 @@
+/* =========================
+   NAVBAR — flotante sobre hero
+========================= */
+
+.bio-navbar {
+  position: fixed;
+  /* top: 1.25rem; */
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  /* padding-inline: 1rem; */
+  pointer-events: none;
+  transition: top 0.3s ease;
+}
+
+.bio-navbar-scrolled {
+  top: 0rem;
+}
+
+.bio-navbar-shell {
+  width: 100%;
+  /* max-width: 1240px; */
+  pointer-events: auto;
+}
+
+/* =========================
+   Cápsula glass
+========================= */
+
+.bio-navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 1rem; */
+
+  width: 100%;
+  min-height: 4rem;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+
+  /* border-radius: 999px; */
+  /* background: rgba(255, 255, 255, 0.08); */
+  /* backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08); */
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.bio-navbar-scrolled .bio-navbar-content {
+  background: var(--color-surface);
+  box-shadow:
+    0 16px 48px var(--shadow-navbar-scroll-2),
+    inset 0 1px 0 var(--shadow-navbar-scroll-1);
+}
+
+/* =========================
+   Logo
+========================= */
+.bio-navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  text-decoration: none;
+}
+
+.bio-navbar-brand-logo {
+  width: 10rem;
+  height: 10rem;
+
+  object-fit: contain;
+
+  flex-shrink: 0;
+}
+
+/* =========================
+   Links
+========================= */
+
+.bio-navbar-nav {
+  display: none;
+  align-items: center;
+  gap: 1.35rem;
+  flex: 1;
+  justify-content: center;
+  padding-inline: 0.5rem;
+}
+
+.bio-navbar-link {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--color-background);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.bio-navbar-link:hover {
+  color: var(--color-accent);
+}
+
+.bio-navbar-link-active {
+  color: var(--color-border);
+  font-weight: 800;
+}
+
+.bio-navbar-scrolled .bio-navbar-link {
+  color: var(--color-black-200);
+}
+
+.bio-navbar-scrolled .bio-navbar-link-active {
+  color: var(--color-hero-overlay);
+  font-weight: 800;
+}
+
+/* =========================
+   Acciones
+========================= */
+
+.bio-navbar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.bio-navbar-cta {
+  display: none;
+  align-items: center;
+  border-radius: 999px !important;
+  background: var(--gradient-cta) !important;
+  border: none !important;
+  color: white !important;
+  box-shadow: 0 8px 24px var(--shadow-btn);
+  padding: 10px 25px;
+  gap: 5px;
+  /* padding-inline: 1.25rem !important; */
+}
+
+.bio-navbar-cta:hover:not(:disabled) {
+  cursor: pointer;
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+.bio-navbar-menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.bio-navbar-menu-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.bio-navbar-scrolled .bio-navbar-menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-black-400);
+  color: var(--color-black-400);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+/* =========================
+   Menú mobile
+========================= */
+
+.bio-mobile-menu {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  /* margin-top: 0.75rem; */
+  /* border-radius: 1.5rem; */
+  border: 1px solid transparent;
+  background: var(--color-hero-overlay);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    margin-top 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.bio-navbar-scrolled .bio-mobile-menu {
+  background: var(--color-background);
+}
+
+.bio-mobile-menu-open {
+  max-height: 32rem;
+  min-height: 80vh;
+  opacity: 1;
+  padding: 1rem;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.bio-mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.bio-mobile-nav .bio-navbar-link {
+  display: block;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.85rem;
+  font-size: 0.9375rem;
+}
+
+.bio-mobile-nav .bio-navbar-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.bio-mobile-menu .bio-navbar-cta {
+  display: inline-flex;
+}
+
+/* =========================
+   Desktop
+========================= */
+
+@media (min-width: 1100px) {
+  .bio-navbar-nav {
+    display: flex;
+  }
+
+  .bio-navbar-cta {
+    display: inline-flex;
+  }
+
+  .bio-navbar-menu-button {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1099px) {
+  .bio-navbar-brand-kicker {
+    display: none;
+  }
+}
