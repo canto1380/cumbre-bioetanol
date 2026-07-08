@@ -1,23 +1,38 @@
 [
   {
     "id": 1,
+    "badge": "Sustentabilidad",
     "title": "Argentina eleva el cupo de bioetanol",
     "description": "Nuevas regulaciones impulsan una mayor participación del bioetanol de caña de azúcar y maíz en las naftas nacionales.",
     "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=600",
-    "date": "01 de Julio, 2026"
+    "date": "01 de Julio, 2026",
+    "url":""
   },
   {
     "id": 2,
+    "badge": "Sustentabilidad",
     "title": "Innovación en Destilerías",
     "description": "Expositores internacionales presentarán tecnologías de punta para optimizar el rendimiento energético en la producción de alcohol.",
     "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
-    "date": "28 de Junio, 2026"
+    "date": "28 de Junio, 2026",
+    "url":""
   },
   {
     "id": 3,
+    "badge": "Sustentabilidad",
     "title": "Hacia la Huella de Carbono Neutra",
     "description": "Mesas de debate analizarán cómo el sector azucarero del NOA lidera la transición hacia una matriz energética sustentable.",
     "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600",
-    "date": "15 de Junio, 2026"
+    "date": "15 de Junio, 2026",
+    "url":""
+  },
+  {
+    "id": 4,
+    "badge": "Sustentabilidad",
+    "title": "Hacia la Huella de Carbono Neutra",
+    "description": "Mesas de debate analizarán cómo el sector azucarero del NOA lidera la transición hacia una matriz energética sustentable.",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600",
+    "date": "15 de Junio, 2026",
+    "url":""
   }
 ]

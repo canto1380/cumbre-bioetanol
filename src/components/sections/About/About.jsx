@@ -1,11 +1,11 @@
 import { Badge, CalendarDays, Container, MapPin } from "lucide-react";
 import SectionTitle from "../../ui/SectionTitle/SectionTitle.jsx";
-import Button from '../../ui/Buttons/Button.jsx'
 import { MapsFrame } from "./Maps.jsx";
 import { AboutData } from "./AboutData.jsx";
+import { useApp } from "../../../hooks/useApp.js";
 
 export function About() {
-
+  const { openRegisterModal } = useApp();
   return (
     <section id='sobre-evento' className='bio-about'>
       {/* <Container> */}
@@ -20,7 +20,7 @@ export function About() {
         />
         <div className="bio-about-grid">
           {/* Información */}
-          <AboutData />
+          <AboutData openRegisterModal={openRegisterModal}/>
 
           {/* Mapa */}
           <MapsFrame url="https://www.google.com/maps?q=Hotel+Catalinas+Park+Tucuman&output=embed"/>

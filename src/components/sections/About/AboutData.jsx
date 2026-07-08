@@ -1,7 +1,7 @@
 import { CalendarDays, Container, MapPin } from "lucide-react";
 import Button from '../../ui/Buttons/Button'
 
-export function AboutData() {
+export function AboutData({openRegisterModal}) {
   return (
     <div className="bio-about-card">
       <div className="bio-about-info">
@@ -45,9 +45,15 @@ export function AboutData() {
           transición hacia una matriz energética sustentable.
         </p>
       </div>
-      <Button>
-        Quiero participar
-      </Button>
+      <div className="bio-hero-actions">
+        <Button
+          className="bio-btn-gradient"
+          onClick={openRegisterModal}
+          size="xl"
+        >
+          Quiero Participar
+        </Button>
+      </div>
     </div>
   )
 }

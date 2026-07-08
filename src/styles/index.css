@@ -5,4 +5,5 @@
 @import "./layout/navbar.css";
 @import "./sections/hero.css";
 @import "./components/sectionTitle.css";
-@import "./sections/about.css"
+@import "./sections/about.css";
+@import  "./sections/news.css";

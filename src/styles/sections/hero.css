@@ -120,8 +120,16 @@
   display: block;
 }
 
+
+:root {
+  --hero-gradient: linear-gradient(110deg, #A3E635, #22C55E);
+}
 .bio-hero-title-accent {
-  color: var(--color-hero-accent);
+  background: var(--hero-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
 }
 
 .bio-hero-subtitle {

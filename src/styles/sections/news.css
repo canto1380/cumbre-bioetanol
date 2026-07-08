@@ -1,0 +1,335 @@
+/* =======================================================
+   News Section
+======================================================= */
+
+.bio-news {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.bio-news-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* =======================================================
+   Swiper
+======================================================= */
+
+.bio-news-swiper {
+  padding: 1rem .25rem 4rem;
+}
+
+.bio-news-swiper .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.bio-news-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+/* =======================================================
+   Card
+======================================================= */
+
+.bio-news-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* height: 100%; */
+  margin: 3rem 0px;
+  background: #fff;
+  border: 1px solid #e6ece9;
+  border-radius: 1.75rem;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, .06);
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.bio-news-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 22px 45px rgba(15, 23, 42, .12);
+}
+
+/* =======================================================
+   Image
+======================================================= */
+
+.bio-news-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 280px;
+}
+
+.bio-news-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform .6s ease;
+}
+
+.bio-news-card:hover .bio-news-image img {
+  transform: scale(1.06);
+}
+
+.bio-news-image::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, .35),
+      rgba(0, 0, 0, 0));
+}
+
+/* =======================================================
+   Category
+======================================================= */
+
+.bio-news-category {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+/* =======================================================
+   Content
+======================================================= */
+
+.bio-news-content {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 1.6rem;
+}
+
+/* =======================================================
+   Date
+======================================================= */
+
+.bio-news-date {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+
+  margin-bottom: 1rem;
+
+  font-size: .88rem;
+
+  color: #6b7280;
+}
+
+.bio-news-date svg {
+  color: var(--color-primary);
+}
+
+/* =======================================================
+   Title
+======================================================= */
+
+.bio-news-title {
+  margin: 0 0 1rem;
+
+  font-size: 1.35rem;
+  font-weight: 700;
+
+  line-height: 1.35;
+
+  color: var(--color-text);
+
+  transition: color .25s;
+}
+
+.bio-news-card:hover .bio-news-title {
+  color: var(--color-primary);
+}
+
+/* =======================================================
+   Description
+======================================================= */
+
+.bio-news-description {
+  flex: 1;
+
+  margin-bottom: 1.75rem;
+
+  color: #5d6b78;
+
+  font-size: 1rem;
+
+  line-height: 1.75;
+}
+
+/* =======================================================
+   Link
+======================================================= */
+
+.bio-news-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+
+  width: fit-content;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  color: var(--color-primary);
+
+  transition: color .25s;
+}
+
+.bio-news-link-icon {
+  transition: transform .25s ease;
+}
+
+.bio-news-link:hover .bio-news-link-icon {
+  transform: translateX(5px);
+}
+
+/* =======================================================
+   Navigation
+======================================================= */
+
+.bio-news-swiper .swiper-button-next,
+.bio-news-swiper .swiper-button-prev {
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  border: 1px solid #e4ebe8;
+
+  box-shadow:
+    0 10px 24px rgba(15, 23, 42, .08);
+
+  transition: .3s;
+}
+
+.bio-news-swiper .swiper-button-next:hover,
+.bio-news-swiper .swiper-button-prev:hover {
+
+  background: var(--color-primary);
+
+  border-color: var(--color-primary);
+}
+
+.bio-news-swiper .swiper-button-next::after,
+.bio-news-swiper .swiper-button-prev::after {
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  color: var(--color-text);
+
+  transition: .3s;
+}
+
+.bio-news-swiper .swiper-button-next:hover::after,
+.bio-news-swiper .swiper-button-prev:hover::after {
+
+  color: white;
+}
+
+/* =======================================================
+   Pagination
+======================================================= */
+
+.bio-news-swiper .swiper-pagination-bullet {
+
+  width: 10px;
+  height: 10px;
+
+  opacity: 1;
+
+  background: #cfd8d4;
+
+  transition: .3s;
+}
+
+.bio-news-swiper .swiper-pagination-bullet-active {
+
+  width: 26px;
+
+  border-radius: 30px;
+
+  background: var(--color-primary);
+}
+
+/* =======================================================
+   Responsive
+======================================================= */
+
+@media (max-width: 992px) {
+
+  .bio-news {
+    padding: 5rem 0;
+  }
+
+  .bio-news-image {
+    height: 250px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .bio-news-container {
+    padding: 0 1.25rem;
+  }
+
+  .bio-news-swiper {
+    padding-bottom: 3.5rem;
+  }
+
+  .bio-news-title {
+    font-size: 1.2rem;
+  }
+
+  .bio-news-image {
+    height: 210px;
+  }
+
+  .bio-news-swiper .swiper-button-next,
+  .bio-news-swiper .swiper-button-prev {
+
+    display: none;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .bio-news {
+    padding: 4rem 0;
+  }
+
+  .bio-news-card {
+    border-radius: 1.4rem;
+  }
+
+  .bio-news-image {
+    height: 200px;
+  }
+
+  .bio-news-content {
+    padding: 1.35rem;
+  }
+}

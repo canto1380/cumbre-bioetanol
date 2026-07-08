@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import {
-  ArrowRight,
   CalendarDays,
   ChevronLeft,
   ChevronRight,
