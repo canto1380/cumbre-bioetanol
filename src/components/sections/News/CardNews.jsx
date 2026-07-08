@@ -24,11 +24,11 @@ export default function CardNews({ news }) {
         />
         <div className="bio-news-category">
 
-          <div className="bio-section-title-badge">
+          {/* <div className="bio-section-title-badge">
             <span className="">{news.badge}</span>
-          </div>
+          </div> */}
 
-          <Badge variant="success">
+          <Badge variant="success"className="bio-section-title-badge">
             {news.badge}
           </Badge>
         </div>
