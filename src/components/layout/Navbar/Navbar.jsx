@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import { ArrowRight, Leaf, Menu, X } from "lucide-react";
-import { Link } from "react-scroll";
+import { ArrowRight, Menu, X } from "lucide-react";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 import Button from "../../ui/Buttons";
 import NavItem from "./NavItem";
 import MobileMenu from "./MobileMenu";
@@ -9,10 +9,20 @@ import useNavbar from "./useNavbar";
 import { useApp } from "../../../hooks/useApp";
 import logoBlanco from '../../../assets/Logo V2 - blanco.png'
 import logoColor from '../../../assets/LogoV1.png'
+import { scroller } from 'react-scroll'
 
 function Navbar() {
   const { isScrolled, isMenuOpen, toggleMenu, closeMenu } = useNavbar();
   const { openRegisterModal } = useApp();
+  const location = useLocation()
+
+  const isNews = location.pathname.startsWith('/noticias')
+  const locationPage =
+    location === '/' || location.pathname.startsWith('/noticias')
+      ? true
+      : false
+
+  console.log(locationPage)
 
   return (
     <header
@@ -20,21 +30,20 @@ function Navbar() {
     >
       <div className="bio-navbar-shell">
         <div className="bio-navbar-content">
-          <Link
+          <RouterLink
             className="bio-navbar-brand"
             duration={700}
             offset={-100}
             smooth
             spy
-            to="inicio"
+            to="/"
           >
             <img
               src={isScrolled ? logoColor : logoBlanco}
               alt="2° Cumbre de Biocombustibles"
               className="bio-navbar-brand-logo"
             />
-
-          </Link>
+          </RouterLink>
 
           <nav className="bio-navbar-nav" aria-label="Principal">
             {NAV_ITEMS.map((item) => (
@@ -45,7 +54,13 @@ function Navbar() {
           <div className="bio-navbar-actions">
             <Button
               className="bio-navbar-cta"
-              onClick={openRegisterModal}
+              onClick={() =>
+                scroller.scrollTo('inscripcion', {
+                  smooth: true,
+                  duration: 700,
+                  offset: -90,
+                })
+              }
               rightIcon={<ArrowRight size={16} />}
               size="sm"
             >

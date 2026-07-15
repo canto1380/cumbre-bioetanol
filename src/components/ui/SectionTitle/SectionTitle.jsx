@@ -19,7 +19,7 @@ function SectionTitle({
     >
       {badge && (
         <div className="bio-section-title-badge">
-          <span className=""> · {badge.props.children}</span>
+          <span className=""> · {badge.props.children} · </span>
         </div>
       )}
 

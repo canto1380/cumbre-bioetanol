@@ -1,7 +1,8 @@
 import { CalendarDays, Container, MapPin } from "lucide-react";
 import Button from '../../ui/Buttons/Button'
+import { scroller } from 'react-scroll'
 
-export function AboutData({openRegisterModal}) {
+export function AboutData({ openRegisterModal }) {
   return (
     <div className="bio-about-card">
       <div className="bio-about-info">
@@ -48,7 +49,13 @@ export function AboutData({openRegisterModal}) {
       <div className="bio-hero-actions">
         <Button
           className="bio-btn-gradient"
-          onClick={openRegisterModal}
+          onClick={() =>
+            scroller.scrollTo('inscripcion', {
+              smooth: true,
+              duration: 700,
+              offset: -100,
+            })
+          }
           size="xl"
         >
           Quiero Participar

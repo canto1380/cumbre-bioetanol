@@ -6,6 +6,7 @@
   position: fixed;
   /* top: 1.25rem; */
   left: 0;
+  top:60px;
   right: 0;
   z-index: 1000;
   display: flex;
@@ -21,7 +22,7 @@
 
 .bio-navbar-shell {
   width: 100%;
-  /* max-width: 1240px; */
+  /* max-width: 150px; */
   pointer-events: auto;
 }
 
@@ -33,19 +34,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 1rem; */
-
   width: 100%;
   min-height: 4rem;
-  padding: 0rem 1.5rem 0rem 1.5rem;
-
-  /* border-radius: 999px; */
-  /* background: rgba(255, 255, 255, 0.08); */
-  /* backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow:
-    0 12px 40px rgba(0, 0, 0, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08); */
+  padding:1.5rem;
 
   transition:
     background 0.3s ease,
@@ -67,13 +58,13 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-
+  cursor: pointer;
   text-decoration: none;
 }
 
 .bio-navbar-brand-logo {
   width: 10rem;
-  height: 10rem;
+  height: auto;
 
   object-fit: contain;
 
@@ -90,11 +81,11 @@
   gap: 1.35rem;
   flex: 1;
   justify-content: center;
-  padding-inline: 0.5rem;
+  padding-inline: .5rem;
 }
 
 .bio-navbar-link {
-  font-size: 0.8125rem;
+  font-size: 0.95rem;
   font-weight: 400;
   color: var(--color-background);
   cursor: pointer;
@@ -136,13 +127,12 @@
   display: none;
   align-items: center;
   border-radius: 999px !important;
-  background: var(--gradient-cta) !important;
+  background: var(--btn-green-gradient) !important;
   border: none !important;
   color: white !important;
   box-shadow: 0 8px 24px var(--shadow-btn);
   padding: 10px 25px;
   gap: 5px;
-  /* padding-inline: 1.25rem !important; */
 }
 
 .bio-navbar-cta:hover:not(:disabled) {
@@ -249,7 +239,7 @@
   }
 
   .bio-navbar-menu-button {
-    display: none;
+    display: none !important;
   }
 }
 

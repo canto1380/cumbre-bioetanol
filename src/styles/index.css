@@ -6,4 +6,13 @@
 @import "./sections/hero.css";
 @import "./components/sectionTitle.css";
 @import "./sections/about.css";
-@import  "./sections/news.css";
+@import "./sections/news.css";
+@import "./sections/schedule.css";
+@import './sections//inscription.css';
+@import "./sections/sponsor.css";
+@import './layout/footer.css';
+@import './pages/news.css';
+@import './layout//topbar.css';
+@import './components/modal.css';
+@import './components/loading.css';
+@import './pages/notFound.css'

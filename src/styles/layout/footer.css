@@ -1,0 +1,212 @@
+/* =======================================================
+   Footer
+======================================================= */
+
+.bio-footer {
+  margin-top: 6rem;
+  background: #0f1720;
+  color: white;
+}
+
+.bio-footer-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem 3rem;
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1fr;
+  gap: 4rem;
+}
+
+/* =======================================================
+   Columnas
+======================================================= */
+
+.bio-footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-footer-column h3 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.bio-footer-column h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* =======================================================
+   Logo cumbre y texto
+======================================================= */
+
+.bio-footer-main-logo {
+  width: 80%;
+  height: auto;
+}
+
+.bio-footer-label {
+  margin: 1rem 0;
+  font-size: .8rem;
+  /* text-transform: uppercase; */
+  letter-spacing: .01em;
+  color: rgba(255, 255, 255, .7);
+}
+
+.bio-footer-organizers {
+  /* display: flex; */
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bio-footer-organizers img {
+  width: 70%;
+  /* height: 60px; */
+  object-fit: contain;
+}
+
+/* =======================================================
+   Organizadores
+======================================================= */
+
+
+
+/* =======================================================
+   Contacto y Redes
+======================================================= */
+.bio-footer-item {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 0.56rem;
+  color: rgba(255, 255, 255, .85);
+}
+
+.bio-footer-item span {
+  font-size: .8rem;
+  /* text-transform: uppercase; */
+  letter-spacing: .01em;
+  color: rgba(255, 255, 255, .7);
+}
+
+.bio-footer-item svg {
+  color: rgba(255, 255, 255, .7);
+  ;
+  flex-shrink: 0;
+}
+
+.bio-footer-redes {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.bio-footer-redes svg {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  /* margin-bottom: 1rem; */
+  color: var(--color-background) !important;
+  text-decoration: none;
+}
+
+.bio-footer-redes svg:hover {
+  transform: scale(1.08);
+}
+
+/* =======================================================
+   Bottom
+======================================================= */
+
+.bio-footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, .08);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: .9rem;
+  color: rgba(255, 255, 255, .6);
+}
+
+/* =======================================================
+   Responsive
+======================================================= */
+
+@media (max-width: 860px) {
+  .bio-footer-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 3rem 6rem;
+  }
+
+  .bio-footer-column {
+    align-items: center;
+  }
+
+  .bio-footer-main-logo {
+    text-align: center;
+    width: 50%;
+  }
+
+  .bio-footer-label {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .bio-footer-organizers {
+    display: flex;
+    justify-content: center;
+    text-align: left
+  }
+
+  .bio-footer-organizers img {
+    width: 40%;
+    align-self: end;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 660px) {
+  .bio-footer-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width:576px) {
+  .bio-footer {
+    margin-top: 4rem;
+  }
+
+  .bio-footer-container {
+    padding: 2.5rem 2.5rem;
+    gap: 2rem;
+  }
+
+  .bio-footer-column {
+    align-items: center;
+    text-align: left;
+  }
+
+  .bio-footer-organizers img {
+    width: 40%;
+    align-self: end;
+    object-fit: contain;
+  }
+
+  .bio-footer-column h3 {
+    font-size: 1.25rem;
+  }
+
+  .bio-footer-column h4 {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+  }
+
+  .bio-footer-redes svg {
+    margin-bottom: 0;
+  }
+}

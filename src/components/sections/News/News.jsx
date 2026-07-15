@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export function News() {
-  console.log(newsData)
+
   return (
     <section id='novedades' className='bio-news'>
       <SectionTitle

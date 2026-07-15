@@ -2,17 +2,11 @@ import { CalendarDays, ArrowRight } from "lucide-react";
 
 import Badge from "../../ui/Badge/Badge.jsx";
 
-// {badge && (
-//   <div className="bio-section-title-badge">
-//     <span className=""> · {badge.props.children}</span>
-//   </div>
-// )}
-
 export default function CardNews({ news }) {
   return (
     <article className="bio-news-card">
       <a
-        href={news.url}
+        href={`${news.url}/${news.id}`}
         target="_blank"
         rel="noopener noreferrer"
         className="bio-news-image"
@@ -24,11 +18,7 @@ export default function CardNews({ news }) {
         />
         <div className="bio-news-category">
 
-          {/* <div className="bio-section-title-badge">
-            <span className="">{news.badge}</span>
-          </div> */}
-
-          <Badge variant="success"className="bio-section-title-badge">
+          <Badge variant="success" className="bio-section-title-badge">
             {news.badge}
           </Badge>
         </div>
@@ -49,7 +39,7 @@ export default function CardNews({ news }) {
         </p>
 
         <a
-          href={news.url}
+          href={`${news.url}/${news.id}`}
           target="_blank"
           rel="noopener noreferrer"
           className="bio-news-link"

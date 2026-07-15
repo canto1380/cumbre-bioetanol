@@ -1,0 +1,215 @@
+/* =======================================================
+   Sponsor Section
+======================================================= */
+
+.bio-sponsor {
+  padding: 6rem 3rem 0;
+  background: #dcf3e837;
+}
+
+/* =======================================================
+   Grid
+======================================================= */
+
+.bio-sponsor-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  /* max-width: 1400px; */
+  margin: 2rem auto 0;
+}
+
+/* =======================================================
+   Card
+======================================================= */
+
+.bio-sponsor-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 170px;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #dfe9e5;
+  border-radius: 28px;
+  text-align: center;
+  transition:
+    transform .30s ease,
+    box-shadow .30s ease,
+    border-color .30s ease;
+  box-shadow:
+    0 10px 30px rgba(15,23,42,.05);
+}
+
+.bio-sponsor-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(18,156,98,.25);
+  box-shadow:
+    0 20px 45px rgba(15,23,42,.10);
+}
+
+/* =======================================================
+   Logo
+======================================================= */
+
+.bio-sponsor-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+  margin-bottom: 1.5rem;
+}
+
+.bio-sponsor-image img {
+  max-width: 180px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform .3s;
+  border-radius: 1rem;
+}
+
+.bio-sponsor-card:hover img {
+  transform: scale(1.04);
+}
+
+/* =======================================================
+   Content
+======================================================= */
+
+.bio-sponsor-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio-sponsor-name {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--color-text);
+}
+
+.bio-sponsor-type {
+  margin-top: .75rem;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+/* =======================================================
+   Footer
+======================================================= */
+
+.bio-sponsor-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #546371;
+  font-size: 1rem;
+}
+
+.btn-sponsor {
+  margin-left: .35rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-sponsor:hover {
+  color: var(--color-primary-dark);
+  cursor: pointer;
+}
+
+/* =======================================================
+   Responsive
+======================================================= */
+
+@media (max-width:1024px){
+  .bio-sponsor-container{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+@media (max-width:770px){
+
+  .bio-sponsor{
+    padding:5rem 2rem 0;
+  }
+
+  .bio-sponsor-container{
+    grid-template-columns:repeat(2,1fr);
+    gap:1.25rem;
+  }
+
+}
+
+@media (max-width:576px){
+
+  .bio-sponsor{
+
+    padding:4rem 1.25rem 0;
+
+  }
+
+  .bio-sponsor-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:1rem;
+
+  }
+
+  .bio-sponsor-card{
+
+    min-height:170px;
+
+    padding:1.25rem;
+
+    border-radius:20px;
+
+  }
+
+  .bio-sponsor-image{
+
+    height:60px;
+
+    margin-bottom:1rem;
+
+  }
+
+  .bio-sponsor-image img{
+
+    max-width:120px;
+
+    max-height:45px;
+
+  }
+
+  .bio-sponsor-name{
+
+    font-size:1rem;
+
+  }
+
+  .bio-sponsor-type{
+
+    font-size:.70rem;
+
+  }
+
+  .bio-sponsor-footer{
+
+    font-size:.95rem;
+
+    margin-top:2rem;
+
+  }
+
+}

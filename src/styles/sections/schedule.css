@@ -1,0 +1,233 @@
+/* =======================================================
+   Schedule Section
+======================================================= */
+
+.bio-schedule {
+  padding: 6rem 3rem 0rem 3rem;
+  background: #fff;
+}
+
+.bio-schedule-container {
+  position: relative;
+  /* max-width: 1100px; */
+  /* place-self: anchor-center; */
+}
+
+/* =======================================================
+   Timeline
+======================================================= */
+
+.bio-schedule-timeline {
+  position: relative;
+  /* max-width: 1180px; */
+  margin: 2rem auto 0;
+}
+
+.bio-schedule-line {
+  position: absolute;
+  left: 25px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #bfe8d2;
+  transform-origin: top;
+}
+
+/* =======================================================
+   Item
+======================================================= */
+
+.bio-schedule-item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 2.5rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+/* =======================================================
+   Marker
+======================================================= */
+
+.bio-schedule-marker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bio-schedule-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #009b72;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow:
+    0 0 0 8px #ffffff,
+    0 8px 20px rgba(0, 0, 0, .08);
+}
+
+/* =======================================================
+   Card
+======================================================= */
+
+.bio-schedule-card {
+
+  background: white;
+  border: 1px solid #d8e5df;
+  border-radius: 28px;
+  padding: 1rem;
+  box-shadow:
+    0 10px 25px rgba(16, 24, 40, .05);
+  transition:
+    .35s ease;
+}
+
+.bio-schedule-card:hover {
+  border-color: rgba(0, 155, 114, .35);
+  box-shadow:
+    0 20px 45px rgba(16, 24, 40, .09);
+}
+
+/* =======================================================
+   Header
+======================================================= */
+
+.bio-schedule-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* =======================================================
+   Hora
+======================================================= */
+
+.bio-schedule-time {
+  flex-shrink: 0;
+  padding: .4rem 1.2rem;
+  border-radius: 999px;
+  background: #e9f8ef;
+  color: #0c9c60;
+  font-weight: 700;
+  font-size: 1rem;
+  min-width: 90px;
+  text-align: center;
+}
+
+/* =======================================================
+   Badge
+======================================================= */
+
+.bio-schedule-badge {
+  display: inline-flex;
+  margin-bottom: .8rem;
+  padding: .4rem 1.2rem;
+  border-radius: 999px;
+  background: #eaf8ef;
+  color: #14945b;
+  font-size: .70rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+/* =======================================================
+   Title
+======================================================= */
+
+.bio-schedule-card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #162434;
+}
+
+
+/* =======================================================
+   Speaker
+======================================================= */
+
+.bio-schedule-speaker {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 20px 2fr;
+  align-items: center;
+  gap: .55rem;
+  margin: 0.5rem 0 0rem 0rem;
+  color: #35557b;
+  font-weight: 200;
+}
+
+/* =======================================================
+   Description
+======================================================= */
+
+.bio-schedule-card p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #5f7285;
+}
+
+/* =======================================================
+   Hover
+======================================================= */
+
+.bio-schedule-item:hover .bio-schedule-icon {
+
+  transform: scale(1.08);
+
+  transition: .3s;
+}
+
+/* =======================================================
+   Responsive
+======================================================= */
+
+@media(max-width:768px) {
+  .bio-schedule {
+    padding: 3rem 1.25rem;
+  }
+
+  .bio-schedule-item {
+    grid-template-columns: 40px 1fr;
+    gap: 1rem;
+  }
+
+  .bio-schedule-line {
+    left: 20px;
+  }
+
+  .bio-schedule-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .bio-schedule-card {
+    padding: 1.35rem;
+  }
+
+  .bio-schedule-card-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .bio-schedule-time {
+    align-self: flex-start;
+    font-size: 1rem;
+  }
+
+  .bio-schedule-card h3 {
+    font-size: 1.35rem;
+  }
+
+  .bio-schedule-card p {
+    font-size: .95rem;
+  }
+
+}

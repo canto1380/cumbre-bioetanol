@@ -8,19 +8,19 @@ import {
 } from "lucide-react";
 import { Link } from "react-scroll";
 import Button from "../../ui/Buttons";
-import { useApp } from "../../../hooks/useApp";
-import { HERO_EVENT, HERO_SLIDES } from "./hero.constant";
+import { HERO_EVENT } from "./hero.constant";
+import heroSlides from "../../../../public/data/slider.json";
 import useHeroSlider from "./useHeroSlider";
+import { scroller } from 'react-scroll'
 
 function Hero() {
-  const { openRegisterModal } = useApp();
-  const { activeIndex, goTo, goNext, goPrev } = useHeroSlider(HERO_SLIDES.length);
-  const activeSlide = HERO_SLIDES[activeIndex];
+  const { activeIndex, goTo, goNext, goPrev } = useHeroSlider(heroSlides.length);
+  const activeSlide = heroSlides[activeIndex];
 
   return (
     <section className="bio-hero" id="inicio">
       <div aria-hidden="true" className="bio-hero-background">
-        {HERO_SLIDES.map((slide, index) => (
+        {heroSlides.map((slide, index) => (
           <div
             key={slide.id}
             className={clsx(
@@ -65,8 +65,13 @@ function Hero() {
             <div className="bio-hero-actions">
               <Button
                 className="bio-btn-gradient"
-                onClick={openRegisterModal}
-                // rightIcon={<ArrowRight size={18} />}
+                onClick={() =>
+                  scroller.scrollTo('inscripcion', {
+                    smooth: true,
+                    duration: 700,
+                    offset: -100,
+                  })
+                }
                 size="xl"
               >
                 Inscribirme
@@ -87,7 +92,7 @@ function Hero() {
 
         <div className="bio-hero-controls">
           <div aria-label="Indicadores del carrusel" className="bio-hero-pagination" role="tablist">
-            {HERO_SLIDES.map((slide, index) => (
+            {heroSlides.map((slide, index) => (
               <button
                 key={slide.id}
                 aria-label={`Ir a la diapositiva ${index + 1}`}

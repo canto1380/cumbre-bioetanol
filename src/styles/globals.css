@@ -35,3 +35,7 @@ textarea,
 select {
   font: inherit;
 }
+
+.main-page {
+  padding-top: 160px;
+}

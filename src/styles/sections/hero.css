@@ -4,8 +4,8 @@
 
 .bio-hero {
   position: relative;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 90vh;
+  min-height: 90dvh;
   display: flex;
   align-items: stretch;
   overflow: hidden;
@@ -120,10 +120,6 @@
   display: block;
 }
 
-
-:root {
-  --hero-gradient: linear-gradient(110deg, #A3E635, #22C55E);
-}
 .bio-hero-title-accent {
   background: var(--hero-gradient);
   -webkit-background-clip: text;
@@ -173,12 +169,13 @@
 }
 
 .bio-btn-gradient {
-  align-items: center;
+  display: inline-flex;
+  align-items: center !important;
   border-radius: 999px !important;
-  background: var(--gradient-cta) !important;
+  background: var(--btn-green-gradient) !important;
   color: white !important;
   border: none !important;
-  box-shadow: 0 12px 32px rgba(0, 168, 120, 0.38);
+  box-shadow: 0 8px 24px var(--shadow-btn);
   padding: 10px 25px;
   gap: 20px;
 }
@@ -223,7 +220,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .bio-hero-pagination {

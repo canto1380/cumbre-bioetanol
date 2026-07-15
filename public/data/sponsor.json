@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "institucion": "Los Balcanes",
+    "tipo":"Empresa",
+    "image": "../src/assets/hero.png",
+    "alt": "Los Balcanes"
+  },
+  {
+    "id": 2,
+    "institucion": "aas",
+    "tipo":"Empresa",
+    "image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80&w=1920",
+    "alt": "Campo de cultivos energéticos visto desde el aire"
+  },
+  {
+    "id": 3,
+    "institucion": "Energía renovable",
+    "tipo":"Empresa",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=1920",
+    "alt": "Infraestructura energética sustentable"
+  },
+  {
+    "id": 4,
+    "institucion": "Los Balcanes",
+    "tipo":"Empresa",
+    "image": "../src/assets/hero.png",
+    "alt": "Los Balcanes"
+  }
+]

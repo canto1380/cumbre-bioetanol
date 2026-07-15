@@ -1,23 +1,27 @@
-import { Link } from "react-scroll";
+import useNavigation from "../../../hooks/useNavigation";
 
 function NavItem({
   id,
   label,
   onClick,
 }) {
+  const { navigateToSection } = useNavigation()
+
+  const handleClick = () => {
+    navigateToSection(id);
+
+    if (onClick) {
+      onClick();
+    }
+  };
   return (
-    <Link
-      to={id}
-      smooth
-      spy
-      duration={700}
-      offset={-90}
-      onClick={onClick}
+    <button
       className="bio-navbar-link"
-      activeClass="bio-navbar-link-active"
+      onClick={handleClick}
     >
       {label}
-    </Link>
+    </button>
+
   );
 }
 
