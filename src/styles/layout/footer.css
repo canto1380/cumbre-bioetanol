@@ -9,9 +9,9 @@
 }
 
 .bio-footer-container {
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: auto;
-  padding: 2rem 3rem;
+  padding: 2rem 7rem;
   display: grid;
   grid-template-columns: 1.2fr 1.2fr 1fr;
   gap: 4rem;
