@@ -1,4 +1,4 @@
-import { Badge, CalendarDays, Container, MapPin } from "lucide-react";
+import { Badge } from "lucide-react";
 import SectionTitle from "../../ui/SectionTitle/SectionTitle.jsx";
 import { MapsFrame } from "./Maps.jsx";
 import { AboutData } from "./AboutData.jsx";

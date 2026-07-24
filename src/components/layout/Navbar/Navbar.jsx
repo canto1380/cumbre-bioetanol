@@ -22,8 +22,6 @@ function Navbar() {
       ? true
       : false
 
-  console.log(locationPage)
-
   return (
     <header
       className={clsx("bio-navbar", isScrolled && "bio-navbar-scrolled")}
@@ -34,8 +32,6 @@ function Navbar() {
             className="bio-navbar-brand"
             duration={700}
             offset={-100}
-            smooth
-            spy
             to="/"
           >
             <img

@@ -13,6 +13,7 @@ export function ScheduleCard({
   title,
   speaker,
   description,
+  moderador,
 }) {
   return (
     <motion.article
@@ -55,10 +56,18 @@ export function ScheduleCard({
             <h3>{title}</h3>
             <p>{description}</p>
 
-            {speaker && (
-              <div className="bio-schedule-speaker">
-                <UserRound size={16} />
-                <span>{speaker}</span>
+            {speaker && speaker.length > 0 && (
+              speaker.map((d, i) => (
+                <div key={i} className="bio-schedule-speaker" >
+                  <UserRound size={16} />
+                  <span>{d}</span>
+                </div>
+
+              ))
+            )}
+            {moderador && (
+              <div className="bio-schedule-moderador" >
+                <span>Moderador: {moderador}</span>
               </div>
             )}
           </div>
@@ -72,6 +81,6 @@ export function ScheduleCard({
         </div>
 
       </motion.div>
-    </motion.article>
+    </motion.article >
   );
 }

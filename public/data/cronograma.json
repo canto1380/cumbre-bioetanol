@@ -1,34 +1,96 @@
 [
   {
     "id": 1,
-    "time": "08:30 - 09:30",
-    "type":"Acreditaciones",
-    "title": "Acreditaciones y Café de Bienvenida",
-    "speaker": "Comité Organizador",
+    "time": "08:00 - 08:45",
+    "type": "Recepción",
+    "title": "Recepción y acreditación.",
     "description": "Recepción de participantes y entrega de material institucional."
   },
   {
     "id": 2,
-    "time": "09:30 - 11:00",
-    "type":"Apertura",
-    "title": "Acto de apertura del evento",
-    "speaker": "Representantes gubernamentales y directores del sector",
-    "description": "Análisis del marco regulatorio actual y proyecciones de incremento de corte en Argentina."
+    "time": "08:50 - 09:45",
+    "type": "Apertura",
+    "title": "Acto de apertura del evento.",
+    "speaker": [
+      "Sr. Gobernador de la provincia de Tucumán.",
+      "Sres. Gobernadores de las provincias de Salta y Jujuy.",
+      "Autoridades provinciales y nacionales."
+    ]
   },
   {
     "id": 3,
-    "time": "09:30 - 11:00",
-    "type":"Panel",
-    "title": "Panel: Políticas Públicas y el Futuro del Bioetanol",
-    "speaker": "Representantes gubernamentales y directores del sector",
-    "description": "Análisis del marco regulatorio actual y proyecciones de incremento de corte en Argentina."
+    "time": "09:45 - 10:30",
+    "type": "PANEL 1",
+    "title": "Marco regulatorio de los biocombustibles en Argentina.",
+    "speaker": [
+      "Patricia Bullrich • Senadora Nacional (CABA).",
+      "Carolina Moisés • Vicepresidenta del Senado de la Nación.",
+      "Alejandra Vigo • Senadora Nacional (Córodba).",
+      "Beatriz Ávila • Senadora Nacional (Tucumán).",
+      "Flavia Royón • Senadora Nacional (Salta)."
+    ],
+    "moderador": "Claudio Molina  • Consultor especialista IPAAT"
   },
   {
     "id": 4,
-    "time": "11:30 - 13:00",
-    "type":"Panel",
-    "title": "Conferencia: Eficiencia y Sustentabilidad en el Ingenio",
-    "speaker": "Ing. Expertos en Procesos Industriales",
-    "description": "Optimización energética en laboratorios y plantas de destilación de caña de azúcar."
+    "time": "10:30 - 11:30",
+    "type": "PANEL 2",
+    "title": "Situación actual de los biocombustibles en el mundo.",
+    "speaker": [
+      "Agustín Torroba • Especialista Internacional de Biocombustibles - IICA. Sec. ejecutivo de Coalición de Biocombustibles Líquidos - CPBIO.",
+      "Marlon Arraes • Secretario Subrogante. Secretaría Nacional de Petróleo, Gas Natural y Biocombustibles - Ministerio de Minas y Energía (Brasil)."
+    ],
+    "moderador": "Sergio Mansur • Secretario de Energía (Córdoba)."
+  },
+  {
+    "id": 5,
+    "time": "11:30 - 12:00",
+    "type": "Networking",
+    "title": "Coffe Break.",
+    "description": "Salón ...."
+  },
+  {
+    "id": 6,
+    "time": "12:00 - 13:00",
+    "type": "PANEL 3",
+    "title": "Sostenibilidad de los biocombustibles en Argentina - Huella de Carbono.",
+    "speaker": [
+      "Jorge Hilbert • Director y Fundador de Energy & Environmental Consulting Services (Argentina).",
+      "Sabine Papendieck • Consultora especialista - Coordinadora del Programa Argentino de Cabono Neutro.",
+      "Netzefy • Mediciones de huella de carbono (Mendoza)."
+    ],
+    "moderador": "Jorge Soria • Jefe del área Técnica y Operativa (IPAAT)."
+  },
+  {
+    "id": 7,
+    "time": "13:00 - 14:00",
+    "type": "Intervalo",
+    "title": "Almuerzo libre.",
+    "description": "Salón ...."
+  },
+  {
+    "id": 8,
+    "time": "14:00 - 14:45",
+    "type": "PANEL 4",
+    "title": "El bioetanol en el desarrollo productivo de Argentina.",
+    "speaker": [
+      "Andrés Leone • Diputado Nacional (CABA).",
+      "Miguel Almada • Coordinador de Bioenergías - SAGyP.",
+      "Patrick Adam • Presidente de la Cámara de Bioetanol de Maíz."
+    ],
+    "moderador": "Verónica Geese • Especialista en bioenergías."
+  },
+  {
+    "id": 9,
+    "time": "14:45 - 15:30",
+    "type": "PANEL 5",
+    "title": "Tecnologías e innovación aplicada a la producción de bioetanol (región NOA Argentina).",
+    "speaker": [
+      "------ • Ingenio Concepción.",
+      "------ • Ingenio La Florida.",
+      "------ • Ingenio Ledesma.",
+      "------ • Ingenio Seaboard."
+    ],
+    "moderador": "Jorge Feijóo • Presidente del Centro Azucarero Argentino."
   }
 ]

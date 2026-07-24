@@ -8,7 +8,7 @@ export function TopBar() {
       <div className="bio-topbar-container">
 
         <a
-          href="https://..."
+          href="https://www.mecontuc.gob.ar/"
           target="_blank"
           rel="noopener noreferrer"
           className="bio-topbar-logo"
@@ -20,7 +20,7 @@ export function TopBar() {
         </a>
 
         <a
-          href="https://..."
+          href="https://www.ipaat.gov.ar/"
           target="_blank"
           rel="noopener noreferrer"
           className="bio-topbar-logo"

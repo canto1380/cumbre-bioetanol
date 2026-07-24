@@ -6,7 +6,7 @@
   position: fixed;
   /* top: 1.25rem; */
   left: 0;
-  top:60px;
+  top:70px;
   right: 0;
   z-index: 1000;
   display: flex;
@@ -63,7 +63,7 @@
 }
 
 .bio-navbar-brand-logo {
-  width: 10rem;
+  width: 15rem;
   height: auto;
 
   object-fit: contain;
