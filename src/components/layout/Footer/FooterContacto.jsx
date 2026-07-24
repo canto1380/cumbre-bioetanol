@@ -32,16 +32,31 @@ export function FooterContacto() {
           contactoweb@ipaat.gov.ar
         </span>
       </div> */}
-      
+
       <div className="bio-footer-organizers">
-        <img
-          src={logoMinsiterio}
-          alt="Organizador 1"
-        />
+        <a
+          href="https://www.mecontuc.gob.ar/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=""
+        >
+          <img
+            src={logoMinsiterio}
+            alt="Organizador 1"
+          />
+        </a>
+
+        <a
+          href="https://www.mecontuc.gob.ar/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className=""
+        >
         <img
           src={logoIPAAT}
           alt="Organizador 2"
         />
+        </a>
       </div>
 
     </div>
