@@ -1,55 +1,46 @@
 import { CalendarDays, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import Badge from "../../ui/Badge/Badge.jsx";
 
 export default function CardNews({ news }) {
+  const to = `${news.url}/${news.id}`;
+
   return (
     <article className="bio-news-card">
-      <a
-        href={`${news.url}/${news.id}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bio-news-image"
-      >
+      <Link to={to} className="bio-news-image">
         <img
           src={news.image}
           alt={news.title}
           loading="lazy"
         />
         <div className="bio-news-category">
-
           <Badge variant="success" className="bio-section-title-badge">
             {news.badge}
           </Badge>
         </div>
-      </a>
+      </Link>
       <div className="bio-news-content">
-
         <div className="bio-news-date">
           <CalendarDays size={15} />
           <span>{news.date}</span>
         </div>
 
         <h3 className="bio-news-title">
-          {news.title}
+          <Link to={to}>{news.title}</Link>
         </h3>
 
         <p className="bio-news-description">
           {news.description}
         </p>
 
-        <a
-          href={`${news.url}/${news.id}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bio-news-link"
-        >
+        <Link to={to} className="bio-news-link">
           Leer más
           <ArrowRight
             size={18}
             className="bio-news-link-icon"
           />
-        </a>
+        </Link>
       </div>
     </article>
   );

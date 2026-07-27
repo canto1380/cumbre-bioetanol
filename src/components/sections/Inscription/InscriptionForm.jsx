@@ -1,134 +1,67 @@
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
+
 import Button from "../../ui/Buttons/Button";
 import { registerInscription } from "../../../services/googleSheet-service";
 import { LoadingOverlay } from "../../Commons/Loading/Loading";
 import { ResultModal } from "../../Modals/Modal";
+import {
+  inscriptionDefaultValues,
+  inscriptionSchema,
+} from "../../../schemas/inscription.schema";
 
-const initialValues = {
-  apellido: "",
-  nombre: "",
-  email: "",
-  institucion: "",
-  cargo: "",
-  telefono: "",
-  provincia: "",
-};
+function FieldError({ message }) {
+  if (!message) return null;
+
+  return <span className="bio-form-error">{message}</span>;
+}
+
 export function InscriptionForm() {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   const [modal, setModal] = useState({
     open: false,
-    status: '',
-    title: '',
-    message: ''
-  })
-  const [form, setForm] = useState(initialValues)
-  const [errors, setErrors] = useState({})
+    status: "",
+    title: "",
+    message: "",
+  });
 
-  const handleChange = ({ target }) => {
-    const { name, value } = target;
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    resolver: zodResolver(inscriptionSchema),
+    defaultValues: inscriptionDefaultValues,
+    mode: "onTouched",
+  });
 
-    setForm((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-
-    if (errors[name]) {
-      setErrors((prev) => ({
-        ...prev,
-        [name]: "",
-      }));
-    }
-  };
-  const validateForm = () => {
-    const newErrors = {};
-
-    // ==========================
-    // Obligatorios
-    // ==========================
-    if (!form.apellido.trim()) {
-      newErrors.apellido = "El apellido es obligatorio.";
-    }
-    if (!form.nombre.trim()) {
-      newErrors.nombre = "El nombre es obligatorio.";
-    }
-    if (!form.email.trim()) {
-      newErrors.email = "El correo electrónico es obligatorio.";
-    }
-
-    // ==========================
-    // Email
-    // ==========================
-    if (
-      form.email &&
-      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)
-    ) {
-      newErrors.email = "Ingrese un correo electrónico válido.";
-    }
-
-    // ==========================
-    // Teléfono
-    // ==========================
-    if (
-      form.telefono &&
-      !/^[0-9+\-\s()]{6,20}$/.test(form.telefono)
-    ) {
-      newErrors.telefono = "Ingrese un teléfono válido.";
-    }
-
-    setErrors(newErrors);
-
-    return Object.keys(newErrors).length === 0;
-  };
-  const reset = () => {
-    setForm(initialValues)
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (!validateForm()) {
-      return;
-    }
-
+  const onSubmit = async (data) => {
     try {
-      setLoading(true)
-      const data = form
-      const response = await registerInscription(data)
-      const responseJSON = JSON.parse(response)
+      setLoading(true);
+      const response = await registerInscription(data);
+      const responseJSON = JSON.parse(response);
+
       if (responseJSON.success) {
-        reset()
+        reset(inscriptionDefaultValues);
         setModal({
           open: true,
-          status: 'success',
-          title: 'Inscripción realizada.',
+          status: "success",
+          title: "Inscripción realizada.",
           message:
-            `Tu inscripción fue registrada correctamente.
-          En los próximos minutos recibirás un correo electrónico con la confirmación.`,
-        })
-        setLoading(false)
-        return
-      }
-      if (!responseJSON.success) {
-        setModal({
-          open: true,
-          status: "error",
-          title: "Error al inscribirse",
-          message:
-            responseJSON.message,
+            "Tu inscripción fue registrada correctamente. En los próximos minutos recibirás un correo electrónico con la confirmación.",
         });
-        setLoading(false)
         return;
       }
 
       setModal({
-        open: false,
-        status: "",
-        title: "",
-        message: "",
+        open: true,
+        status: "error",
+        title: "Error al inscribirse",
+        message: responseJSON.message,
       });
-    } catch (error) {
-      setLoading(false);
-
+    } catch {
       setModal({
         open: true,
         status: "error",
@@ -136,6 +69,8 @@ export function InscriptionForm() {
         message:
           "No fue posible registrar la inscripción. Intentá nuevamente en unos minutos.",
       });
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -143,102 +78,79 @@ export function InscriptionForm() {
     <div className="bio-inscription-card">
       <form
         className="bio-inscription-form"
-        onSubmit={handleSubmit}
+        onSubmit={handleSubmit(onSubmit)}
         noValidate
       >
         <div className="bio-inscription-row">
           <div className="bio-inscription-field">
-            <label>Apellido *</label>
+            <label htmlFor="apellido">Apellido *</label>
             <input
+              id="apellido"
               type="text"
-              name="apellido"
-              value={form.apellido}
-              onChange={handleChange}
-              className={errors.apellido ? 'error' : ''}
+              aria-invalid={Boolean(errors.apellido)}
+              className={errors.apellido ? "error" : ""}
+              {...register("apellido")}
             />
-            {errors.apellido && (
-              <span className="bio-form-error">
-                {errors.apellido}
-              </span>
-            )}
+            <FieldError message={errors.apellido?.message} />
           </div>
           <div className="bio-inscription-field">
-            <label>Nombre *</label>
+            <label htmlFor="nombre">Nombre *</label>
             <input
+              id="nombre"
               type="text"
-              name="nombre"
-              value={form.nombre}
-              onChange={handleChange}
-              className={errors.nombre ? 'error' : ''}
+              aria-invalid={Boolean(errors.nombre)}
+              className={errors.nombre ? "error" : ""}
+              {...register("nombre")}
             />
-            {errors.nombre && (
-              <span className="bio-form-error">
-                {errors.nombre}
-              </span>
-            )}
+            <FieldError message={errors.nombre?.message} />
           </div>
         </div>
+
         <div className="bio-inscription-field">
-          <label>Correo electrónico *</label>
+          <label htmlFor="email">Correo electrónico *</label>
           <input
+            id="email"
             type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
+            aria-invalid={Boolean(errors.email)}
             className={errors.email ? "error" : ""}
+            {...register("email")}
           />
-          {errors.email && (
-            <span className="bio-form-error">
-              {errors.email}
-            </span>
-          )}
+          <FieldError message={errors.email?.message} />
         </div>
+
         <div className="bio-inscription-row">
           <div className="bio-inscription-field">
-            <label>Institución / Empresa</label>
+            <label htmlFor="institucion">Institución / Empresa</label>
             <input
+              id="institucion"
               type="text"
-              name="institucion"
-              value={form.institucion}
-              onChange={handleChange}
+              {...register("institucion")}
             />
           </div>
           <div className="bio-inscription-field">
-            <label>Cargo</label>
-            <input
-              type="text"
-              name="cargo"
-              value={form.cargo}
-              onChange={handleChange}
-            />
+            <label htmlFor="cargo">Cargo</label>
+            <input id="cargo" type="text" {...register("cargo")} />
           </div>
         </div>
+
         <div className="bio-inscription-row">
           <div className="bio-inscription-field">
-            <label>Teléfono</label>
+            <label htmlFor="telefono">Teléfono</label>
             <input
-              type="number"
-              name="telefono"
-              value={form.telefono}
-              onChange={handleChange}
+              id="telefono"
+              type="tel"
+              aria-invalid={Boolean(errors.telefono)}
               className={errors.telefono ? "error" : ""}
+              {...register("telefono")}
             />
-            {errors.telefono && (
-              <span className="bio-form-error">
-                {errors.telefono}
-              </span>
-            )}
+            <FieldError message={errors.telefono?.message} />
           </div>
           <div className="bio-inscription-field">
-            <label>Provincia</label>
-            <input
-              type="text"
-              name="provincia"
-              value={form.provincia}
-              onChange={handleChange}
-            />
+            <label htmlFor="provincia">Provincia</label>
+            <input id="provincia" type="text" {...register("provincia")} />
           </div>
         </div>
+
         <Button
           className="bio-btn-gradient bio-inscription-button"
           size="xl"
@@ -247,9 +159,8 @@ export function InscriptionForm() {
           Confirmar inscripción
         </Button>
       </form>
-      <LoadingOverlay
-        open={loading}
-      />
+
+      <LoadingOverlay open={loading} />
 
       <ResultModal
         open={modal.open}

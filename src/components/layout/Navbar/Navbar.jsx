@@ -1,26 +1,18 @@
 import clsx from "clsx";
 import { ArrowRight, Menu, X } from "lucide-react";
-import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import Button from "../../ui/Buttons";
 import NavItem from "./NavItem";
 import MobileMenu from "./MobileMenu";
 import { NAV_ITEMS } from "./navbar.constant";
 import useNavbar from "./useNavbar";
-import { useApp } from "../../../hooks/useApp";
+import useNavigation from "../../../hooks/useNavigation";
 import logoBlanco from '../../../assets/Logo V2 - blanco.png'
 import logoColor from '../../../assets/LogoV1.png'
-import { scroller } from 'react-scroll'
 
 function Navbar() {
   const { isScrolled, isMenuOpen, toggleMenu, closeMenu } = useNavbar();
-  const { openRegisterModal } = useApp();
-  const location = useLocation()
-
-  const isNews = location.pathname.startsWith('/noticias')
-  const locationPage =
-    location === '/' || location.pathname.startsWith('/noticias')
-      ? true
-      : false
+  const { navigateToSection } = useNavigation();
 
   return (
     <header
@@ -30,8 +22,6 @@ function Navbar() {
         <div className="bio-navbar-content">
           <RouterLink
             className="bio-navbar-brand"
-            duration={700}
-            offset={-100}
             to="/"
           >
             <img
@@ -50,13 +40,7 @@ function Navbar() {
           <div className="bio-navbar-actions">
             <Button
               className="bio-navbar-cta"
-              onClick={() =>
-                scroller.scrollTo('inscripcion', {
-                  smooth: true,
-                  duration: 700,
-                  offset: -90,
-                })
-              }
+              onClick={() => navigateToSection("inscripcion")}
               rightIcon={<ArrowRight size={16} />}
               size="sm"
             >

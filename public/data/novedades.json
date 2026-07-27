@@ -4,35 +4,55 @@
     "badge": "Sustentabilidad",
     "title": "Argentina eleva el cupo de bioetanol",
     "description": "Nuevas regulaciones impulsan una mayor participación del bioetanol de caña de azúcar y maíz en las naftas nacionales.",
-    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=600",
+    "content": [
+      "El nuevo marco normativo busca consolidar al bioetanol como un pilar de la matriz energética argentina, con especial foco en las provincias productoras del NOA y del centro del país.",
+      "La medida contempla un cronograma de incremento gradual del corte obligatorio, acompañado de incentivos para ampliar la capacidad instalada de destilerías y mejorar la trazabilidad de la producción.",
+      "Desde el sector destacan que la medida fortalece la demanda interna, genera empleo regional y contribuye a la reducción de emisiones en el transporte."
+    ],
+    "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200",
     "date": "01 de Julio, 2026",
-    "url":"/noticias"
+    "url": "/noticias"
   },
   {
     "id": 2,
     "badge": "Institucional",
     "title": "Innovación en Destilerías",
     "description": "Expositores internacionales presentarán tecnologías de punta para optimizar el rendimiento energético en la producción de alcohol.",
-    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600",
+    "content": [
+      "Durante la II Cumbre de Bioetanol, empresas y centros tecnológicos compartirán experiencias de eficiencia energética, recuperación de calor y digitalización de procesos industriales.",
+      "Las presentaciones incluirán casos de modernización de plantas, control de calidad en línea y soluciones para reducir el consumo de vapor y agua en destilerías.",
+      "El objetivo es acercar herramientas concretas a productores, técnicos y decisores públicos para acelerar la adopción de mejores prácticas."
+    ],
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200",
     "date": "28 de Junio, 2026",
-    "url":"/noticias"
+    "url": "/noticias"
   },
   {
     "id": 3,
     "badge": "Sustentabilidad",
     "title": "Hacia la Huella de Carbono Neutra",
     "description": "Mesas de debate analizarán cómo el sector azucarero del NOA lidera la transición hacia una matriz energética sustentable.",
-    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600",
+    "content": [
+      "El bioetanol de caña se posiciona como una de las alternativas con menor intensidad de carbono dentro de los biocombustibles líquidos disponibles en la región.",
+      "Especialistas debatirán metodologías de medición de huella, certificaciones internacionales y oportunidades de exportación asociadas a criterios ambientales.",
+      "También se abordará el rol de la cogeneración a partir de bagazo y su impacto en la descarbonización de la industria azucarera."
+    ],
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1200",
     "date": "15 de Junio, 2026",
-    "url":"/noticias"
+    "url": "/noticias"
   },
   {
     "id": 4,
     "badge": "Industria",
-    "title": "Hacia la Huella de Carbono Neutra",
-    "description": "Mesas de debate analizarán cómo el sector azucarero del NOA lidera la transición hacia una matriz energética sustentable.",
-    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=600",
-    "date": "15 de Junio, 2026",
-    "url":"/noticias"
+    "title": "El NOA apuesta a la integración agroindustrial",
+    "description": "Productores, industriales y organismos públicos coordinan acciones para fortalecer la cadena del bioetanol en Tucumán y la región.",
+    "content": [
+      "La integración entre caña, maíz, logística y destilerías aparece como una prioridad para ganar escala y competitividad en el mercado interno.",
+      "En la cumbre se presentarán experiencias de articulación público-privada, financiamiento y desarrollo de proveedores locales.",
+      "El encuentro busca dejar una agenda concreta de trabajo para la próxima campaña y para las políticas de promoción del sector."
+    ],
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200",
+    "date": "10 de Junio, 2026",
+    "url": "/noticias"
   }
 ]

@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import { NewsHero } from "./NewsHero";
 import { NewsFilters } from "./NewsFilter";
 import { NewsGrid } from "./NewsGrid";
+import { PAGE_SEO, Seo } from "../../seo";
 // import { NewsPagination } from "./NewsPagination";
 
 import newsData from "../../../public/data/novedades.json";
@@ -55,6 +56,13 @@ function NewsPage() {
 
   return (
     <>
+      <Seo
+        title={PAGE_SEO.news.title}
+        description={PAGE_SEO.news.description}
+        path={PAGE_SEO.news.path}
+        type={PAGE_SEO.news.type}
+        keywords={["noticias bioetanol", "novedades", "cumbre bioetanol"]}
+      />
       <NewsHero />
       <NewsFilters
         search={search}

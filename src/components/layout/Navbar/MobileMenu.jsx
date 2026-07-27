@@ -3,10 +3,15 @@ import { ArrowRight } from "lucide-react";
 import Button from "../../ui/Buttons";
 import NavItem from "./NavItem";
 import { NAV_ITEMS } from "./navbar.constant";
-import { useApp } from "../../../hooks/useApp";
+import useNavigation from "../../../hooks/useNavigation";
 
 function MobileMenu({ isOpen, onClose }) {
-  const { openRegisterModal } = useApp();
+  const { navigateToSection } = useNavigation();
+
+  const handleClickInscription = () => {
+    navigateToSection("inscripcion");
+    onClose();
+  }
 
   return (
     <div
@@ -21,10 +26,7 @@ function MobileMenu({ isOpen, onClose }) {
       <Button
         className="bio-navbar-cta"
         fullWidth
-        onClick={() => {
-          onClose();
-          openRegisterModal();
-        }}
+        onClick={handleClickInscription}
         rightIcon={<ArrowRight size={16} />}
       >
         Inscribirme

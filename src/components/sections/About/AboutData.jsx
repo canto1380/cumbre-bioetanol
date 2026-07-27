@@ -3,7 +3,7 @@ import Button from '../../ui/Buttons/Button'
 import { scroller } from 'react-scroll'
 import { HERO_EVENT } from "../Hero/hero.constant";
 
-export function AboutData({ openRegisterModal }) {
+export function AboutData() {
   return (
     <div className="bio-about-card">
       <div className="bio-about-info">

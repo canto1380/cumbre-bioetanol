@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom"
 import Button from "../../components/ui/Buttons"
 import { ArrowLeft, Home } from "lucide-react"
+import { PAGE_SEO, Seo } from "../../seo"
 
 function NotFoundPage() {
   return (
-    // <MainLayout>
+    <>
+      <Seo
+        title={PAGE_SEO.notFound.title}
+        description={PAGE_SEO.notFound.description}
+        path={PAGE_SEO.notFound.path}
+        noindex={PAGE_SEO.notFound.noindex}
+      />
     <section className="bio-not-found">
       <div className="bio-not-found-content">
         <span className="bio-not-found-code">404</span>
@@ -37,7 +44,7 @@ function NotFoundPage() {
         </div>
       </div>
     </section>
-    // </MainLayout>
+    </>
   )
 }
 export default NotFoundPage
