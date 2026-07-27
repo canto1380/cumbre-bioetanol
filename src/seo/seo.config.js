@@ -12,6 +12,7 @@ export const SITE = {
   organization: "IPAAT",
   eventDate: "2026-08-14",
   eventLocation: "Hotel Catalinas, Tucumán, Argentina",
+  defaultOgImage: "/favicon.svg",
 };
 
 export function getSiteUrl() {
@@ -41,7 +42,7 @@ export const DEFAULT_SEO = {
   description: SITE.defaultDescription,
   path: "/",
   type: "website",
-  image: "/Favicon.png",
+  image: "/favicon.svg",
 };
 
 export const PAGE_SEO = {

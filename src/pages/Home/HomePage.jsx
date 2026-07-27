@@ -7,7 +7,9 @@ import { Schedule } from "../../components/sections/Schedule/Schedule";
 import { Sponsor } from "../../components/sections/sponsor/Sponsor";
 import { useEffect } from "react";
 import { scroller } from 'react-scroll'
-import { PAGE_SEO, Seo, buildCanonicalUrl, SITE } from "../../seo";
+import { PAGE_SEO, Seo } from "../../seo";
+import { buildEventSchema } from "../../seo/eventSchema";
+import portadaNoticias from "../../assets/portada-noticias.webp";
 
 function HomePage() {
   const location = useLocation()
@@ -38,6 +40,7 @@ function HomePage() {
         description={seo.description}
         path={seo.path}
         type={seo.type}
+        image={portadaNoticias}
         keywords={[
           "bioetanol",
           "cumbre bioetanol",
@@ -47,30 +50,12 @@ function HomePage() {
         ]}
       >
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Event",
-            name: SITE.name,
-            description: seo.description,
-            startDate: SITE.eventDate,
-            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-            eventStatus: "https://schema.org/EventScheduled",
-            location: {
-              "@type": "Place",
-              name: SITE.eventLocation,
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "San Miguel de Tucumán",
-                addressRegion: "Tucumán",
-                addressCountry: "AR",
-              },
-            },
-            organizer: {
-              "@type": "Organization",
-              name: SITE.organization,
-            },
-            url: buildCanonicalUrl("/"),
-          })}
+          {JSON.stringify(
+            buildEventSchema({
+              description: seo.description,
+              image: portadaNoticias,
+            })
+          )}
         </script>
       </Seo>
       <Hero />

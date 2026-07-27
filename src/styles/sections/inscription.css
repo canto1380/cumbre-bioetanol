@@ -90,12 +90,9 @@
 
 .bio-inscription-card {
   padding: 1.5rem;
-
   background: #ffffff;
-
   border: 1px solid #dbe8e4;
   border-radius: 28px;
-
   box-shadow:
     0 16px 45px rgba(16, 24, 40, .08);
 }

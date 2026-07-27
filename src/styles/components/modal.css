@@ -73,6 +73,15 @@
   gap: 20px;
 }
 
+.bio-form-error {
+  color: #dc2626 !Important;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+}
+
 @keyframes modalFade {
 
   from {
