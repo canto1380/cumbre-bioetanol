@@ -3,8 +3,17 @@
 ======================================================= */
 
 .bio-inscription {
-  padding: 6rem 3rem 0 3rem;
-  /* background-color: ; */
+  padding: 3rem 3rem 3rem 3rem;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f3faf7 12%,
+    #e8f4ee 30%,
+    #d4ebe0 50%,
+    #e8f4ee 70%,
+    #f3faf7 88%,
+    #ffffff 100%
+  );
 }
 
 /* =======================================================

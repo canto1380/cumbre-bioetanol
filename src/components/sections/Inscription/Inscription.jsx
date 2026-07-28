@@ -1,5 +1,3 @@
-import { Badge } from "lucide-react";
-import SectionTitle from "../../ui/SectionTitle/SectionTitle";
 import { InscriptionData } from "./InscriptionData";
 import { InscriptionForm } from "./InscriptionForm";
 

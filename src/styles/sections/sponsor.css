@@ -3,8 +3,17 @@
 ======================================================= */
 
 .bio-sponsor {
-  padding: 6rem 3rem 0;
-  background: #dcf3e837;
+  padding: 3rem 3rem 3rem 3rem;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #fdfffe 12%,
+    #e8f4ee 30%,
+    #d4ebe0 50%,
+    #e8f4ee 70%,
+    #f3faf7 88%,
+    #ffffff 100%
+  );
 }
 
 /* =======================================================
@@ -59,7 +68,7 @@
   justify-content: center;
   width: 100%;
   height: 90px;
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
 }
 
 .bio-sponsor-image img {
@@ -69,7 +78,7 @@
   height: auto;
   object-fit: contain;
   transition: transform .3s;
-  border-radius: 1rem;
+  border-radius: 0rem;
 }
 
 .bio-sponsor-card:hover img {
