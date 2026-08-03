@@ -14,7 +14,7 @@ export function About() {
             </Badge>
           }
           title="Una cumbre por el bioetanol"
-          subtitle="Una jornada que reúne a la industria, el sector público, la academia y la sociedad civil para trazar la hoja de ruta del bioetanol argentino."
+          subtitle="Una jornada que reúne a la industria, al sector cañero, al sector publico y sociedad civil para trazar hoja de ruta del bioetanol argentino."
         />
         <div className="bio-about-grid">
           {/* Información */}
