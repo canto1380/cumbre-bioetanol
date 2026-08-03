@@ -136,8 +136,8 @@
   color: #44566c;
 }
 
-.bio-inscription-field input {
-  height: 48px;
+.bio-inscription-field input, textarea{
+  height: 60px;
   /* padding: 0 1rem; */
   border: 1px solid #d8e5df;
   border-radius: 16px;

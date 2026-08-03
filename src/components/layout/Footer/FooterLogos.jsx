@@ -1,6 +1,4 @@
-import logoCumbre from "../../../assets/Logo V2 - blanco.png";
-import logoMinsiterio from "../../../assets/ministerio.png";
-import logoIPAAT from "../../../assets/ipaat.png";
+import logoCumbre from "../../../assets/LogoV2.png";
 
 export function FooterLogos() {
   return (

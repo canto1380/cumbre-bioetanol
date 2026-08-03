@@ -7,7 +7,7 @@ import MobileMenu from "./MobileMenu";
 import { NAV_ITEMS } from "./navbar.constant";
 import useNavbar from "./useNavbar";
 import useNavigation from "../../../hooks/useNavigation";
-import logoBlanco from '../../../assets/Logo V2 - blanco.png'
+import logoBlanco from '../../../assets/LogoV2.png'
 import logoColor from '../../../assets/LogoV1.png'
 
 function Navbar() {

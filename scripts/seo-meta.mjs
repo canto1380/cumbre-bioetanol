@@ -11,7 +11,7 @@ export const PAGE_SEO = {
   home: {
     title: "2° Cumbre de Bioetanol",
     description:
-      "Inscribite a la II Cumbre de Bioetanol. Conocé el cronograma, novedades del sector y participá del encuentro en Tucumán el 14 de agosto de 2026.",
+      "Inscribite a la II Cumbre de Bioetanol. Conocé el cronograma, novedades del sector y participá del encuentro en Tucumán el 21 de agosto de 2026.",
     path: "/",
     type: "website",
   },

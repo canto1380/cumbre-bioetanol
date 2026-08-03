@@ -22,12 +22,23 @@
   /* place-self: anchor-center; */
 }
 
+.bio-news-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.bio-news-cta a {
+  text-decoration: none;
+}
+
 /* =======================================================
    Swiper
 ======================================================= */
 
 .bio-news-swiper {
-  padding: 1rem .25rem 4rem;
+  padding: 1rem .25rem 2.5rem;
 }
 
 .bio-news-swiper .swiper-slide {

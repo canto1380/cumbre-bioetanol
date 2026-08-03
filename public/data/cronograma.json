@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "time": "08:00 - 08:45",
+    "time": "08:00 - 09:00",
     "type": "Recepción",
     "title": "Recepción y acreditación.",
     "description": "Recepción de participantes y entrega de material institucional."
   },
   {
     "id": 2,
-    "time": "08:50 - 09:45",
+    "time": "09:00 - 09:45",
     "type": "Apertura",
     "title": "Acto de apertura del evento.",
     "speaker": [
-      "Sr. Gobernador de la provincia de Tucumán.",
+      "Sr. Gobernador de la provincia de Tucumán, Osvaldo Jaldo.",
       "Sres. Gobernadores de las provincias de Salta y Jujuy.",
       "Autoridades provinciales y nacionales."
     ]
   },
   {
     "id": 3,
-    "time": "09:45 - 10:30",
+    "time": "09:45 - 10:45",
     "type": "PANEL 1",
     "title": "Marco regulatorio de los biocombustibles en Argentina.",
     "speaker": [
@@ -27,70 +27,69 @@
       "Carolina Moisés • Vicepresidenta del Senado de la Nación.",
       "Alejandra Vigo • Senadora Nacional (Córodba).",
       "Beatriz Ávila • Senadora Nacional (Tucumán).",
+      "Sandra Mendoza • Senadora Nacional (Tucumán).",
       "Flavia Royón • Senadora Nacional (Salta)."
     ],
-    "moderador": "Claudio Molina  • Consultor especialista IPAAT"
+    "moderador": "Claudio Molina  • Especialista en biocombustibles"
+  },
+  {
+    "id": 5,
+    "time": "10:45 - 11:15",
+    "type": "Networking",
+    "title": "Coffe Break."
   },
   {
     "id": 4,
-    "time": "10:30 - 11:30",
+    "time": "11:15 - 12:00",
     "type": "PANEL 2",
     "title": "Situación actual de los biocombustibles en el mundo.",
     "speaker": [
       "Agustín Torroba • Especialista Internacional de Biocombustibles - IICA. Sec. ejecutivo de Coalición de Biocombustibles Líquidos - CPBIO.",
       "Marlon Arraes • Secretario Subrogante. Secretaría Nacional de Petróleo, Gas Natural y Biocombustibles - Ministerio de Minas y Energía (Brasil)."
-    ],
-    "moderador": "Sergio Mansur • Secretario de Energía (Córdoba)."
-  },
-  {
-    "id": 5,
-    "time": "11:30 - 12:00",
-    "type": "Networking",
-    "title": "Coffe Break.",
-    "description": "Salón ...."
+    ]
   },
   {
     "id": 6,
-    "time": "12:00 - 13:00",
+    "time": "12:00 - 12:45",
     "type": "PANEL 3",
     "title": "Sostenibilidad de los biocombustibles en Argentina - Huella de Carbono.",
     "speaker": [
-      "Jorge Hilbert • Director y Fundador de Energy & Environmental Consulting Services (Argentina).",
-      "Sabine Papendieck • Consultora especialista - Coordinadora del Programa Argentino de Cabono Neutro.",
-      "Netzefy • Mediciones de huella de carbono (Mendoza)."
-    ],
-    "moderador": "Jorge Soria • Jefe del área Técnica y Operativa (IPAAT)."
+      "Jorge Hilbert • Director y Fundador de Energy & Environmental Consulting Services - Especialista en bioenergía.",
+      "Sabine Papendieck • Socia Gerente Estrateco - Coordinadora del Grupo de Expertos CPBIO - Coordinadora del Programa Argentino de Cabono Neutro."
+    ]
   },
   {
     "id": 7,
-    "time": "13:00 - 14:00",
+    "time": "12:45 - 14:00",
     "type": "Intervalo",
-    "title": "Almuerzo libre.",
-    "description": "Salón ...."
+    "title": ""
   },
   {
     "id": 8,
     "time": "14:00 - 14:45",
     "type": "PANEL 4",
-    "title": "El bioetanol en el desarrollo productivo de Argentina.",
+    "title": "Los biocombustibles en el desarrollo productivo de Argentina.",
     "speaker": [
       "Andrés Leone • Diputado Nacional (CABA).",
-      "Miguel Almada • Coordinador de Bioenergías - SAGyP.",
-      "Patrick Adam • Presidente de la Cámara de Bioetanol de Maíz."
-    ],
-    "moderador": "Verónica Geese • Especialista en bioenergías."
+      "Verónica Geese • Asesora en políticas de energía y sostenibilidad - Ex Secretaria de Estado den Energía de la Provincia de Santa Fe - Argentina.",
+      "Patrick Adam • Presidente de la Cámara de Bioetanol de Maíz - Argentina."
+    ]
   },
   {
     "id": 9,
     "time": "14:45 - 15:30",
     "type": "PANEL 5",
-    "title": "Tecnologías e innovación aplicada a la producción de bioetanol (región NOA Argentina).",
+    "title": "Bioetanol de caña de azúcar y sostenibilidad: desafíos y oportunidades en el NOA.",
     "speaker": [
-      "------ • Ingenio Concepción.",
-      "------ • Ingenio La Florida.",
-      "------ • Ingenio Ledesma.",
-      "------ • Ingenio Seaboard."
-    ],
-    "moderador": "Jorge Feijóo • Presidente del Centro Azucarero Argentino."
+      "Ingenio de Tucumán.",
+      "Ingenio de Salta.",
+      "Ingenio de Jujuy."
+    ]
+  },
+  {
+    "id": 10,
+    "time": "15:30",
+    "type": "Cierre",
+    "title": "Cierre de la II Cumbre de Bioetanol."
   }
 ]

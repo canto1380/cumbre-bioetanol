@@ -84,7 +84,6 @@ function main() {
     });
   });
 
-  console.log(`Meta social generada para ${news.length + 2} rutas (${siteUrl}).`);
 }
 
 main();

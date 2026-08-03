@@ -6,15 +6,17 @@ export const inscriptionSchema = z.object({
   apellido: z
     .string()
     .trim()
-    .min(1, "El apellido es obligatorio."),
+    .min(2, "El apellido es obligatorio.")
+    .max(16, "El apellido no puede tener más de 16 caracteres."),
   nombre: z
     .string()
     .trim()
-    .min(1, "El nombre es obligatorio."),
+    .min(2, "El nombre es obligatorio.")
+    .max(16, "El nombre no puede tener más de 16 caracteres."),
   email: z
     .string()
     .trim()
-    .min(1, "El correo electrónico es obligatorio.")
+    .min(8, "El correo electrónico es obligatorio.")
     .email("Ingrese un correo electrónico válido."),
   institucion: z.string().optional(),
   cargo: z.string().optional(),
@@ -26,6 +28,7 @@ export const inscriptionSchema = z.object({
       "Ingrese un teléfono válido."
     ),
   provincia: z.string().optional(),
+  observaciones: z.string().optional(),
 });
 
 export const inscriptionDefaultValues = {
@@ -36,4 +39,5 @@ export const inscriptionDefaultValues = {
   cargo: "",
   telefono: "",
   provincia: "",
+  observaciones: ""
 };

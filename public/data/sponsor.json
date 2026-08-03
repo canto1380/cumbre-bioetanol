@@ -57,58 +57,135 @@
   },
   {
     "id": 9,
+    "institucion": "Ingenio Ñuñorco",
+    "tipo": "Ingenio",
+    "image": "/sponsors/ingenio-nunorco.png",
+    "alt": "Ñuñorco"
+  },
+  {
+    "id": 10,
     "institucion": "Destilería Bella Vista",
     "tipo": "Destilería",
     "image": "/sponsors/minetti-bella-vista.png",
     "alt": "Destilería Bella Vista"
   },
   {
-    "id": 10,
+    "id": 11,
     "institucion": "Ingenio Santa Bárbara",
     "tipo": "Ingenio",
     "image": "/sponsors/santa-barbara.png",
     "alt": "Ingenio Santa Bárbara"
   },
   {
-    "id": 11,
+    "id": 12,
     "institucion": "Ingenio Santa Rosa",
     "tipo": "Ingenio",
     "image": "/sponsors/santa-rosa.png",
     "alt": "Ingenio Santa Rosa"
   },
   {
-    "id": 12,
+    "id": 13,
     "institucion": "Ingenio Seaboard",
     "tipo": "Ingenio",
     "image": "/sponsors/norte/seaboard.png",
     "alt": "Ingenio Seaboard"
   },
   {
-    "id": 13,
+    "id": 14,
     "institucion": "Ingenio San Isidro",
     "tipo": "Ingenio",
     "image": "/sponsors/norte/san-isidro.png",
     "alt": "Ingenio San Isidro"
   },
   {
-    "id": 14,
+    "id": 15,
     "institucion": "Ingenio Ledesma",
     "tipo": "Ingenio",
     "image": "/sponsors/norte/ledesma.jpg",
     "alt": "Ingenio Ledesma"
   },
   {
-    "id": 15,
+    "id": 16,
     "institucion": "Ingenio La Esperanza",
     "tipo": "Ingenio",
     "image": "/sponsors/norte/la-esperanza.png",
     "alt": "Ingenio La Esperanza"
   },
   {
-    "id": 16,
+    "id": 17,
     "institucion": "Ingenio Rio Grande",
     "tipo": "Ingenio",
     "image": "/sponsors/norte/rio-grande.png",
     "alt": "Ingenio Rio Grande"
+  },
+  {
+    "id": 18,
+    "institucion": "Comité Regional de Productores Cañeros",
+    "tipo": "Comité",
+    "image": "/sponsors/otros/ComiteRegionaldeProductoresCañeros.jpeg",
+    "alt": "Comité Regional de Productores Cañeros"
+  },
+  {
+    "id": 19,
+    "institucion": "Banco Nación de la Argentina",
+    "tipo": "Banco",
+    "image": "/sponsors/otros/banco nacion.webp",
+    "alt": "Banco Nación de la Argentina"
+  },
+  {
+    "id": 20,
+    "institucion": "Centro Azucarero Argentino",
+    "tipo": "Asociación Gremial",
+    "image": "/sponsors/otros/caa.png",
+    "alt": "Centro Azucarero Argentino"
+  },
+  {
+    "id": 21,
+    "institucion": "Estación Experimental de Agroindustrial Obispo Colombres",
+    "tipo": "Institución",
+    "image": "/sponsors/otros/EEAOC.png",
+    "alt": "EEAOC"
+  },
+  {
+    "id": 22,
+    "institucion": "Instituto Interamericano de Cooperación para la Agricultura",
+    "tipo": "Organismo Internacional",
+    "image": "/sponsors/otros/IICA.png",
+    "alt": "IICA"
+  },
+  {
+    "id": 23,
+    "institucion": "Honorable Legislatura de Tucumán",
+    "tipo": "Organismo Legislativo",
+    "image": "/sponsors/otros/Legislatura.png",
+    "alt": "Honorable Legislatura de Tucumán"
+  },
+  {
+    "id": 24,
+    "institucion": "Liga Bioenergética de las Provincias",
+    "tipo": "",
+    "image": "/sponsors/otros/liga.png",
+    "alt": "Liga Bioenergética de las Provincias"
+  },
+  {
+    "id": 25,
+    "institucion": "Marca Tucumán",
+    "tipo": "",
+    "image": "/sponsors/otros/marcaTucuman.svg",
+    "alt": ""
+  },
+  {
+    "id": 26,
+    "institucion": "Sociedad Argentina de Técnicos de la Caña de Azúcar",
+    "tipo": "Institución",
+    "image": "/sponsors/otros/satca.jpg",
+    "alt": "SATCA"
+  },
+  {
+    "id": 27,
+    "institucion": "Scania",
+    "tipo": "Empresa Privada",
+    "image": "/sponsors/otros/scania.png",
+    "alt": "Scania"
   }
 ]

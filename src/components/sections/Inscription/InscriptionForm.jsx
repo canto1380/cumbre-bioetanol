@@ -151,6 +151,15 @@ export function InscriptionForm() {
           </div>
         </div>
 
+        <div className="bio-inscription-field">
+          <label htmlFor="observaciones">Observaciones</label>
+          <textarea
+            id="observaciones"
+            placeholder="Restricción alimentaria (celíaco, diabético, etc.)"
+            {...register("observaciones")}
+          />
+        </div>
+
         <Button
           className="bio-btn-gradient bio-inscription-button"
           size="xl"
