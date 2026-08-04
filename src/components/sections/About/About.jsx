@@ -13,10 +13,10 @@ export function About() {
               Sobre el evento
             </Badge>
           }
-          title="Una cumbre por el bioetanol"
-          subtitle="Se constituye como un espacio de diálogo y
-           reflexión que reafirma el compromiso de Tucumán y del NOA con una 
-           matriz energética más limpia, federal y sustentable para toda la Argentina."
+          title="Impulsando el bioetanol de caña"
+          subtitle="Este espacio de convergencia para líderes del sector público, privado y 
+          académico, con el propósito de consolidar el rol estratégico del bioetanol en la
+          matriz energética Argentina."
         />
         <div className="bio-about-grid">
           {/* Información */}

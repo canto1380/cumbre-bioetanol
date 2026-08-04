@@ -39,11 +39,12 @@ export function AboutData() {
           Acerca del evento
         </h3>
         <p>
-        Esta Cumbre busca impulsar políticas de Estado y acciones concretas que acompañen la transición energética de Argentina,
-        respaldadas por un marco regulatorio que garantice previsibilidad y seguridad para la producción de biocombustibles.<br/>
-        El debate se centrará en el papel del bioetanol de caña de azúcar como motor de una movilidad sostenible y a la actualización
-        del marco normativo vigente. Además se mostrarán los avances técnicos y tecnológicos que marcan el presente y proyectan
-        el futuro de esta industria.
+        Esta 2da. edición de la Cumbre de Bioetanol busca impulsar políticas de Estado y 
+        acciones concretas que acompañen la transición energética de Argentina, promover 
+        el intercambio de experiencias y fortalecer la cooperación regional en torno a una 
+        industria clave para el desarrollo sostenible. Impulsando un marco regulatorio 
+        sólido que garantice previsibilidad y seguridad jurídica para la producción de 
+        biocombustibles.
         </p>
       </div>
       <div className="bio-hero-actions">

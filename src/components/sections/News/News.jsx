@@ -18,7 +18,7 @@ export function News() {
       <SectionTitle
         badge={<Badge variant="success">Novedades</Badge>}
         title="Lo último del sector"
-        subtitle="Avances, políticas y resultados de la industria del bioetanol en Argentina."
+        subtitle="Avances, políticas e innovaciones de los biocombustibles en Argentina."
       />
 
       <div className="bio-news-container">
