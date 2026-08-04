@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 .env
+/public/data/cronograma-respaldo.json
+/public/data/sponsor-respaldo.json
 
 # Editor directories and files
 .vscode/*
