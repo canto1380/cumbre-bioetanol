@@ -4,6 +4,7 @@
 
 .bio-sponsor {
   padding: 3rem 3rem 3rem 3rem;
+  overflow-x: clip;
   background: linear-gradient(
     180deg,
     #ffffff 0%,
@@ -162,63 +163,43 @@
 @media (max-width:576px){
 
   .bio-sponsor{
-
     padding:4rem 1.25rem 0;
-
   }
 
   .bio-sponsor-container{
-
     grid-template-columns:repeat(2,1fr);
-
     gap:1rem;
-
   }
 
   .bio-sponsor-card{
-
     min-height:170px;
-
-    padding:1.25rem;
-
+    padding:.75rem;
     border-radius:20px;
-
   }
 
   .bio-sponsor-image{
-
     height:60px;
-
-    margin-bottom:1rem;
-
+    margin-bottom:.5rem;
   }
 
   .bio-sponsor-image img{
-
-    max-width:120px;
-
-    max-height:45px;
-
+    max-width:95%;
+    min-height: 55px;
+    max-height:60px;
   }
 
   .bio-sponsor-name{
-
-    font-size:1rem;
-
+    font-size:0.9rem;
+    line-height: 1.2;
   }
 
   .bio-sponsor-type{
-
     font-size:.70rem;
-
   }
 
   .bio-sponsor-footer{
-
     font-size:.95rem;
-
-    margin-top:2rem;
-
+    margin-top:1rem;
   }
 
 }

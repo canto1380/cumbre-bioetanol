@@ -14,7 +14,9 @@ export function About() {
             </Badge>
           }
           title="Una cumbre por el bioetanol"
-          subtitle="Una jornada que reúne a la industria, al sector cañero, al sector publico y sociedad civil para trazar hoja de ruta del bioetanol argentino."
+          subtitle="Se constituye como un espacio de diálogo y
+           reflexión que reafirma el compromiso de Tucumán y del NOA con una 
+           matriz energética más limpia, federal y sustentable para toda la Argentina."
         />
         <div className="bio-about-grid">
           {/* Información */}

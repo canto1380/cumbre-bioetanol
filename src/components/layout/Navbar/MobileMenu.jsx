@@ -25,7 +25,6 @@ function MobileMenu({ isOpen, onClose }) {
 
       <Button
         className="bio-navbar-cta"
-        fullWidth
         onClick={handleClickInscription}
         rightIcon={<ArrowRight size={16} />}
       >

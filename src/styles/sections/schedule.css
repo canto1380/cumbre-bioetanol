@@ -125,7 +125,7 @@
 
 .bio-schedule-badge {
   display: inline-flex;
-  margin-bottom: .8rem;
+  margin-bottom: .5rem;
   padding: .4rem 1.2rem;
   border-radius: 999px;
   background: #eaf8ef;
@@ -142,7 +142,7 @@
 
 .bio-schedule-card h3 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #162434;
 }
@@ -160,7 +160,8 @@
   gap: .55rem;
   margin: 0.2rem 0 0rem 0rem;
   color: #35557b;
-  font-weight: 200;
+  font-weight: 150;
+  font-size: .9rem;
 }
 .bio-schedule-moderador {
   display: flex;
@@ -171,17 +172,6 @@
   margin: 0.5rem 0 0rem 0rem;
   color: #002444;
   font-weight: 500;
-}
-
-/* =======================================================
-   Description
-======================================================= */
-
-.bio-schedule-card p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #5f7285;
 }
 
 /* =======================================================

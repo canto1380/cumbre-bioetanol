@@ -26,8 +26,9 @@ export function News() {
           modules={[Navigation, Pagination, Autoplay]}
           className="bio-news-swiper"
           spaceBetween={28}
-          slidesPerView={3}
-          loop
+          slidesPerView={1}
+          loop={newsData.length > 3}
+          watchOverflow
           pagination={{
             clickable: true,
           }}
@@ -38,12 +39,15 @@ export function News() {
           breakpoints={{
             0: {
               slidesPerView: 1,
+              spaceBetween: 16,
             },
             768: {
               slidesPerView: 2,
+              spaceBetween: 20,
             },
             1200: {
               slidesPerView: 3,
+              spaceBetween: 28,
             },
           }}
         >

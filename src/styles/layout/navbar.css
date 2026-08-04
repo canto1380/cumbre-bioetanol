@@ -4,14 +4,12 @@
 
 .bio-navbar {
   position: fixed;
-  /* top: 1.25rem; */
   left: 0;
-  top:70px;
+  top: 70px;
   right: 0;
   z-index: 1000;
   display: flex;
   justify-content: center;
-  /* padding-inline: 1rem; */
   pointer-events: none;
   transition: top 0.3s ease;
 }
@@ -22,7 +20,6 @@
 
 .bio-navbar-shell {
   width: 100%;
-  /* max-width: 150px; */
   pointer-events: auto;
 }
 
@@ -31,13 +28,14 @@
 ========================= */
 
 .bio-navbar-content {
+  position: relative;
+  z-index: 1003;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   min-height: 4rem;
-  padding:1.5rem;
-
+  padding: 1.5rem;
   transition:
     background 0.3s ease,
     border-color 0.3s ease,
@@ -89,6 +87,10 @@
   cursor: pointer;
   white-space: nowrap;
   transition: color 0.2s ease;
+  background: transparent;
+  border: none;
+  font: inherit;
+  text-align: inherit;
 }
 
 .bio-navbar-link:hover {
@@ -148,6 +150,7 @@
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   color: white;
+  background: transparent;
   cursor: pointer;
   transition: background 0.2s ease;
 }
@@ -155,72 +158,101 @@
 .bio-navbar-menu-button:hover {
   background: rgba(255, 255, 255, 0.12);
 }
+
 .bio-navbar-scrolled .bio-navbar-menu-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 999px;
   border: 1px solid var(--color-black-400);
   color: var(--color-black-400);
-  cursor: pointer;
-  transition: background 0.2s ease;
 }
 
 /* =========================
-   Menú mobile
+   Menú mobile — panel lateral
 ========================= */
 
 .bio-mobile-menu {
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  /* margin-top: 0.75rem; */
-  /* border-radius: 1.5rem; */
-  border: 1px solid transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1002;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: min(300px, 82vw);
+  height: 100dvh;
+  height: 100vh;
+  padding: 5.5rem 2.5rem 2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
   background: var(--color-hero-overlay);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.28);
+  transform: translateX(105%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transition:
-    max-height 0.35s ease,
-    opacity 0.3s ease,
-    margin-top 0.3s ease,
-    border-color 0.3s ease;
+    transform 0.3s ease,
+    opacity 0.25s ease,
+    visibility 0.3s ease;
 }
 
 .bio-navbar-scrolled .bio-mobile-menu {
-  background: var(--color-background);
+  background: rgba(248, 250, 252, 0.98);
+  border-left-color: rgba(15, 23, 42, 0.08);
+  box-shadow: -12px 0 40px rgba(15, 23, 42, 0.12);
 }
 
 .bio-mobile-menu-open {
-  max-height: 32rem;
-  min-height: 80vh;
+  transform: translateX(0);
   opacity: 1;
-  padding: 1rem;
-  border-color: rgba(255, 255, 255, 0.12);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .bio-mobile-nav {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  gap: 0.25rem;
-  margin-bottom: 1rem;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0 0 1.5rem;
+  width: 100%;
 }
 
 .bio-mobile-nav .bio-navbar-link {
-  display: block;
-  padding: 0.75rem 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.9rem 1rem;
   border-radius: 0.85rem;
-  font-size: 0.9375rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .bio-mobile-nav .bio-navbar-link:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-hero-accent);
+}
+
+.bio-navbar-scrolled .bio-mobile-nav .bio-navbar-link {
+  color: var(--color-black-200);
+}
+
+.bio-navbar-scrolled .bio-mobile-nav .bio-navbar-link:hover {
+  background: rgba(15, 23, 42, 0.06);
+  color: var(--color-primary);
 }
 
 .bio-mobile-menu .bio-navbar-cta {
   display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
 }
 
 /* =========================
@@ -239,10 +271,25 @@
   .bio-navbar-menu-button {
     display: none !important;
   }
+
+  .bio-mobile-menu {
+    display: none !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1099px) {
   .bio-navbar-brand-kicker {
     display: none;
+  }
+
+  .bio-mobile-menu {
+    width: min(340px, 70vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .bio-mobile-menu {
+    width: min(280px, 86vw);
+    padding: 5rem 1.15rem 1.5rem;
   }
 }

@@ -18,6 +18,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0.55rem 6rem;
+  max-width: 100%;
 }
 
 /* =======================================================

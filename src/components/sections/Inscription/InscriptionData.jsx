@@ -13,7 +13,7 @@ export function InscriptionData() {
           </Badge>
         }
         title='Reservá tu lugar'
-        subtitle='Completá el formulario. Los datos se almacenan localmente en este dispositivo.'
+        subtitle='Completá el formulario. Se te enviará un correo de confirmación.'
       />
 
       <div className="bio-inscription-benefits">

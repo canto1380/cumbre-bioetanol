@@ -9,12 +9,13 @@ import HomePage from '../pages/Home/HomePage'
 import NewsPage from '../pages/News/NewsPage'
 import NotFoundPage from '../pages/NotFound/NotFoundPage'
 import NewPage from '../pages/NewPage/NewPage'
-
+import ScrollToTop from '../components/Commons/ScrollToTop'
 
 function AppRouter() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<MainLayout />}>
           <Route path='/' element={<HomePage />} />
