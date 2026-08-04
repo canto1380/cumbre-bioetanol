@@ -20,7 +20,7 @@ export function Sponsor() {
             colaboradores
           </Badge>
         }
-        title='Gracias a nuestros colaboradores'
+        title='Nos acompañan'
         subtitle="Instituciones, empresas y organismos que hacen posible esta edición de la Cumbre."
       />
 

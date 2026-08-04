@@ -169,10 +169,17 @@
     "alt": "Liga Bioenergética de las Provincias"
   },
   {
+    "id": 28,
+    "institucion": "Centro Azucarero Regional de Tucumán",
+    "tipo": "Cámara Empresaria",
+    "image": "/sponsors/otros/CART1.png",
+    "alt": "Centro Azucarero Regional de Tucumán"
+  },
+  {
     "id": 25,
     "institucion": "Marca Tucumán",
     "tipo": "Organismo Gubernamental",
-    "image": "/sponsors/otros/marcaTucuman.svg",
+    "image": "/sponsors/otros/tucuman.png",
     "alt": ""
   },
   {
@@ -184,10 +191,10 @@
   },
   {
     "id": 27,
-    "institucion": "Scania",
+    "institucion": "Cia. Mercantil",
     "tipo": "Empresa Privada",
-    "image": "/sponsors/otros/scania.png",
-    "alt": "Scania"
+    "image": "/sponsors/otros/cia-mercantil.svg",
+    "alt": "Cia. Mercantil"
   },
   {
     "id": 27,
