@@ -1,6 +1,4 @@
-# Archivos SEO: servirlos tal cual (no reescribir a la SPA)
-/robots.txt    /robots.txt    200
-/sitemap.xml   /sitemap.xml   200
-
-# SPA: el resto de rutas caen en index.html
+# SPA: todas las rutas caen en index.html.
+# robots.txt y sitemap.xml son archivos reales en dist/ y Netlify
+# los sirve directamente (los estáticos tienen prioridad sobre esta regla).
 /*    /index.html   200
