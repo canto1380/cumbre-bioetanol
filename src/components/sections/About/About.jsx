@@ -6,7 +6,6 @@ import { AboutData } from "./AboutData.jsx";
 export function About() {
   return (
     <section id='sobre-evento' className='bio-about'>
-      {/* <Container> */}
         <SectionTitle
           badge={
             <Badge variant="success">
@@ -25,7 +24,6 @@ export function About() {
           {/* Mapa */}
           <MapsFrame url="https://www.google.com/maps?q=Hotel+Catalinas+Park+Tucuman&output=embed"/>
         </div>
-      {/* </Container> */}
     </section>
   )
 }
