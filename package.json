@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/generate-social-html.mjs",
+    "build": "vite build && node scripts/generate-social-html.mjs && node scripts/generate-search-files.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

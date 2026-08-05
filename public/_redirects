@@ -1,1 +1,6 @@
+# Archivos SEO: servirlos tal cual (no reescribir a la SPA)
+/robots.txt    /robots.txt    200
+/sitemap.xml   /sitemap.xml   200
+
+# SPA: el resto de rutas caen en index.html
 /*    /index.html   200
