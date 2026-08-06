@@ -23,7 +23,6 @@ export function getSiteUrl() {
 export function buildCanonicalUrl(path = "/") {
   const siteUrl = getSiteUrl();
   let normalizedPath = path.startsWith("/") ? path : `/${path}`;
-
   if (normalizedPath === "/") {
     return siteUrl;
   }
@@ -32,7 +31,6 @@ export function buildCanonicalUrl(path = "/") {
   if (normalizedPath.endsWith("/")) {
     normalizedPath = normalizedPath.slice(0, -1);
   }
-
   return `${siteUrl}${normalizedPath}`;
 }
 

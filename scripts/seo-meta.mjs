@@ -39,16 +39,12 @@ export function formatSeoTitle(title) {
 export function buildCanonicalUrl(path = "/") {
   const siteUrl = getSiteUrl();
   let normalizedPath = path.startsWith("/") ? path : `/${path}`;
-
   if (normalizedPath === "/") {
     return siteUrl;
   }
-
-  // Sin barra final: coincide con React Router y evita 301 de Pretty URLs.
   if (normalizedPath.endsWith("/")) {
     normalizedPath = normalizedPath.slice(0, -1);
   }
-
   return `${siteUrl}${normalizedPath}`;
 }
 
