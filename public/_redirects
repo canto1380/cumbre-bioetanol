@@ -1,9 +1,8 @@
-# Servir HTML estático de noticias SIN redirección 301
-# (Netlify Pretty URLs haría /noticias → /noticias/ y Google lo marca como "Error de redirección")
-/noticias           /noticias/index.html      200
-/noticias/          /noticias/index.html      200
-/noticias/:id       /noticias/:id/index.html  200
-/noticias/:id/      /noticias/:id/index.html  200
+# 200! = rewrite forzado (sin 301). Evita Pretty URLs: /noticias → /noticias/
+/noticias           /noticias.html            200!
+/noticias/          /noticias.html            200!
+/noticias/:id       /noticias/:id.html        200!
+/noticias/:id/      /noticias/:id.html        200!
 
-# SPA: el resto de rutas
+# SPA fallback (sin force: no pisa assets ni los HTML de arriba)
 /*                  /index.html               200

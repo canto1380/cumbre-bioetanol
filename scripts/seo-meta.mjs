@@ -25,7 +25,7 @@ export const PAGE_SEO = {
 };
 
 export function getSiteUrl() {
-  return (process.env.VITE_SITE_URL || "https://cumbre-bioetanol.netlify.app").replace(
+  return (process.env.VITE_SITE_URL || "https://conferenciasipaat.gob.ar").replace(
     /\/$/,
     ""
   );

@@ -5,13 +5,47 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# Desactiva Pretty URLs para evitar 301 /noticias → /noticias/
+# Desactiva Pretty URLs (301 /ruta → /ruta/ o .html → extensionless)
+[build.processing]
+  skip_processing = false
+
 [build.processing.html]
   pretty_urls = false
 
 # Variables que DEBEN estar en Netlify UI también:
 # VITE_SITE_URL=https://conferenciasipaat.gob.ar
 # VITE_GOOGLE_SCRIPT_URL=...
+# En Netlify UI: desactivar "Prerendering" si está activo (causa Error de redirección en GSC).
+
+# Espejo de public/_redirects con force=true (prioridad sobre archivos/carpetas)
+[[redirects]]
+  from = "/noticias"
+  to = "/noticias.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/noticias/"
+  to = "/noticias.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/noticias/:id"
+  to = "/noticias/:id.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/noticias/:id/"
+  to = "/noticias/:id.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
   for = "/robots.txt"
@@ -23,4 +57,14 @@
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/noticias"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/noticias/*"
+  [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"

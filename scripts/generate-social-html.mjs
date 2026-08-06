@@ -68,14 +68,22 @@ ${paragraphs}
   `;
 }
 
-function writeRouteHtml(relativeDir, meta) {
+/** Escribe HTML plano (noticias.html). Evita index.html en carpetas (301 Pretty URLs). */
+function writeFlatHtml(relativePathWithoutExt, meta) {
   const templatePath = path.join(distDir, "index.html");
   const template = fs.readFileSync(templatePath, "utf8");
-  const outputDir = path.join(distDir, relativeDir);
+  const outputPath = path.join(distDir, `${relativePathWithoutExt}.html`);
   const html = injectSocialMeta(template, meta);
 
-  fs.mkdirSync(outputDir, { recursive: true });
-  fs.writeFileSync(path.join(outputDir, "index.html"), html, "utf8");
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+  fs.writeFileSync(outputPath, html, "utf8");
+}
+
+function removeDirIndexHtml(relativeDir) {
+  const indexPath = path.join(distDir, relativeDir, "index.html");
+  if (fs.existsSync(indexPath)) {
+    fs.unlinkSync(indexPath);
+  }
 }
 
 function main() {
@@ -114,10 +122,11 @@ function main() {
     "utf8"
   );
 
-  writeRouteHtml("noticias", newsMeta);
+  writeFlatHtml("noticias", newsMeta);
+  removeDirIndexHtml("noticias");
 
   news.forEach((item) => {
-    writeRouteHtml(`noticias/${item.id}`, {
+    writeFlatHtml(`noticias/${item.id}`, {
       title: formatSeoTitle(item.title),
       description: item.description,
       url: buildCanonicalUrl(`/noticias/${item.id}`),
@@ -125,9 +134,12 @@ function main() {
       type: "article",
       bodyHtml: buildArticleBody(item),
     });
+    removeDirIndexHtml(`noticias/${item.id}`);
   });
 
-  console.log(`Meta social + HTML semántico generado (${news.length + 2} rutas, ${siteUrl}).`);
+  console.log(
+    `Meta social + HTML semántico generado (${news.length + 2} rutas planas, ${siteUrl}).`
+  );
 }
 
 main();

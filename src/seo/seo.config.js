@@ -17,7 +17,7 @@ export const SITE = {
 
 export function getSiteUrl() {
   const url = import.meta.env.VITE_SITE_URL?.replace(/\/$/, "");
-  return url || "https://cumbrebioetanol.ipaat.gov.ar";
+  return url || "https://conferenciasipaat.gob.ar";
 }
 
 export function buildCanonicalUrl(path = "/") {
