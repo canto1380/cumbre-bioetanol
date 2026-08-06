@@ -1,176 +1,147 @@
 [
   {
     "id": 8,
-    "institucion": "Ing. Aguilares | Ing. Cruz Alta | Ing. La Florida",
     "image": "/sponsors/los-balcanes.png",
     "alt": "Los Balcanes"
   },
   {
     "id": 1,
-    "institucion": "Ing. Bella Vista | Ing. Famaillá",
     "image": "/sponsors/arca-contal-famailla.svg",
     "alt": "Arca Continental"
   },
   {
     "id": 2,
-    "institucion": "Ingenio La Providencia",
     "image": "/sponsors/arcor-laprovidencia.png",
     "alt": "Arcor"
   },
   {
     "id": 7,
-    "institucion": "Ingenio Leales",
     "image": "/sponsors/leales.jpg",
     "alt": "Ingenio Leales"
   },
   {
     "id": 3,
-    "institucion": "Ingenio Marapa",
     "image": "/sponsors/cass-color.jpg",
     "alt": "Cass"
   },
   {
     "id": 5,
-    "institucion": "Ingenio La Corona",
     "image": "/sponsors/la-corona.png",
     "alt": "Ingenio La Corona"
   },
   {
     "id": 4,
-    "institucion": "Ingenio Concepción",
     "image": "/sponsors/ingenios-de-tucuman.png",
     "alt": "Ingenios de Tucumán"
   },
   {
     "id": 12,
-    "institucion": "Ingenio Santa Rosa",
     "image": "/sponsors/santa-rosa.png",
     "alt": "Ingenio Santa Rosa"
   },
   {
     "id": 9,
-    "institucion": "Ingenio Ñuñorco",
     "image": "/sponsors/ingenio-nunorco.png",
     "alt": "Ñuñorco"
   },
   {
     "id": 11,
-    "institucion": "Ingenio Santa Bárbara",
     "image": "/sponsors/santa-barbara.png",
     "alt": "Ingenio Santa Bárbara"
   },
   {
     "id": 6,
-    "institucion": "Ingenio La Trinidad",
     "image": "/sponsors/la-trinidad.png",
     "alt": "Ingenio La Trinidad"
   },
   {
     "id": 10,
-    "institucion": "Destilería Bella Vista",
     "image": "/sponsors/minetti-bella-vista.png",
     "alt": "Destilería Bella Vista"
   },
   {
     "id": 15,
-    "institucion": "Ingenio Ledesma",
     "image": "/sponsors/norte/ledesma.jpg",
     "alt": "Ingenio Ledesma"
   },
   {
     "id": 13,
-    "institucion": "Ingenio Seaboard",
     "image": "/sponsors/norte/seaboard.png",
     "alt": "Ingenio Seaboard"
   },
   {
     "id": 14,
-    "institucion": "Ingenio San Isidro",
     "image": "/sponsors/norte/san-isidro.png",
     "alt": "Ingenio San Isidro"
   },
   {
     "id": 16,
-    "institucion": "Ingenio La Esperanza",
     "image": "/sponsors/norte/la-esperanza.png",
     "alt": "Ingenio La Esperanza"
   },
   {
     "id": 17,
-    "institucion": "Ingenio Rio Grande",
     "image": "/sponsors/norte/rio-grande.png",
     "alt": "Ingenio Rio Grande"
   },
   {
     "id": 18,
-    "institucion": "Comité Regional de Productores Cañeros",
     "image": "/sponsors/otros/ComiteRegionaldeProductoresCañeros.jpeg",
     "alt": "Comité Regional de Productores Cañeros"
   },
   {
     "id": 23,
-    "institucion": "Honorable Legislatura de Tucumán",
     "image": "/sponsors/otros/Legislatura.png",
     "alt": "Honorable Legislatura de Tucumán"
   },
   {
     "id": 19,
-    "institucion": "Banco Nación de la Argentina",
     "image": "/sponsors/otros/banco nacion.webp",
     "alt": "Banco Nación de la Argentina"
   },
   {
     "id": 20,
-    "institucion": "Centro Azucarero Argentino",
     "image": "/sponsors/otros/caa.png",
     "alt": "Centro Azucarero Argentino"
   },
   {
     "id": 21,
-    "institucion": "Estación Experimental de Agroindustrial Obispo Colombres",
     "image": "/sponsors/otros/EEAOC.png",
     "alt": "EEAOC"
   },
   {
     "id": 22,
-    "institucion": "Instituto Interamericano de Cooperación para la Agricultura",
     "image": "/sponsors/otros/IICA.png",
     "alt": "IICA"
   },
   
   {
     "id": 24,
-    "institucion": "Liga Bioenergética de las Provincias",
     "image": "/sponsors/otros/liga.png",
     "alt": "Liga Bioenergética de las Provincias"
   },
   {
     "id": 28,
-    "institucion": "Centro Azucarero Regional de Tucumán",
     "image": "/sponsors/otros/CART1.png",
     "alt": "Centro Azucarero Regional de Tucumán"
   },
   {
     "id": 25,
-    "institucion": "Marca Tucumán",
     "image": "/sponsors/otros/tucuman.png",
     "alt": ""
   },
   {
     "id": 26,
-    "institucion": "Sociedad Argentina de Técnicos de la Caña de Azúcar",
     "image": "/sponsors/otros/satca.jpg",
     "alt": "SATCA"
   },
   {
     "id": 27,
-    "institucion": "Cia. Mercantil",
     "image": "/sponsors/otros/cia-mercantil.svg",
     "alt": "Cia. Mercantil"
   },
   {
     "id": 30,
-    "institucion": "Instituto Nacional de Tecnología Industria",
     "image": "/sponsors/otros/inti.png",
     "alt": "Instituto Nacional de Tecnología Industrial"
   }
