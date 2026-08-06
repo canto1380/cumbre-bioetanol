@@ -22,7 +22,7 @@ function Seo({
   const resolvedTitle = formatSeoTitle(title);
   const resolvedDescription = description || SITE.defaultDescription;
   const canonicalUrl = buildCanonicalUrl(path);
-  const imageUrl = buildAbsoluteAssetUrl(image || "/Favicon.png");
+  const imageUrl = buildAbsoluteAssetUrl(image || "/favicon-192.png");
   const robots = noindex ? "noindex, nofollow" : "index, follow";
 
   return (

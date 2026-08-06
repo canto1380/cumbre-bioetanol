@@ -95,7 +95,7 @@ function main() {
   const siteUrl = getSiteUrl();
   const news = JSON.parse(fs.readFileSync(newsPath, "utf8"));
   const defaultImage = buildAbsoluteAssetUrl(
-    findHashedAsset("portada-noticias") || "/favicon.svg",
+    findHashedAsset("portada-noticias") || "/favicon-192.png",
     siteUrl
   );
 

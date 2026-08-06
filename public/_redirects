@@ -4,5 +4,5 @@
 /noticias/:id       /noticias/:id.html        200!
 /noticias/:id/      /noticias/:id.html        200!
 
-# SPA fallback (sin force: no pisa assets ni los HTML de arriba)
+# SPA fallback (no pisa archivos estáticos reales: favicon, assets, etc.)
 /*                  /index.html               200
