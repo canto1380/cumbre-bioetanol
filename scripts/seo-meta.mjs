@@ -38,8 +38,18 @@ export function formatSeoTitle(title) {
 
 export function buildCanonicalUrl(path = "/") {
   const siteUrl = getSiteUrl();
-  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
-  return `${siteUrl}${normalizedPath === "/" ? "" : normalizedPath}`;
+  let normalizedPath = path.startsWith("/") ? path : `/${path}`;
+
+  if (normalizedPath === "/") {
+    return siteUrl;
+  }
+
+  // Sin barra final: coincide con React Router y evita 301 de Pretty URLs.
+  if (normalizedPath.endsWith("/")) {
+    normalizedPath = normalizedPath.slice(0, -1);
+  }
+
+  return `${siteUrl}${normalizedPath}`;
 }
 
 export function buildAbsoluteAssetUrl(assetPath, siteUrl = getSiteUrl()) {

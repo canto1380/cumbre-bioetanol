@@ -10,7 +10,7 @@ export const SITE = {
   themeColor: "#1D7A4A",
   twitterHandle: "",
   organization: "IPAAT",
-  eventDate: "2026-08-14",
+  eventDate: "2026-08-21",
   eventLocation: "Hotel Catalinas, Tucumán, Argentina",
   defaultOgImage: "/favicon.svg",
 };
@@ -21,8 +21,19 @@ export function getSiteUrl() {
 }
 
 export function buildCanonicalUrl(path = "/") {
-  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
-  return `${getSiteUrl()}${normalizedPath === "/" ? "" : normalizedPath}`;
+  const siteUrl = getSiteUrl();
+  let normalizedPath = path.startsWith("/") ? path : `/${path}`;
+
+  if (normalizedPath === "/") {
+    return siteUrl;
+  }
+
+  // Sin barra final: coincide con React Router y evita 301 de Pretty URLs.
+  if (normalizedPath.endsWith("/")) {
+    normalizedPath = normalizedPath.slice(0, -1);
+  }
+
+  return `${siteUrl}${normalizedPath}`;
 }
 
 export function buildAbsoluteAssetUrl(assetPath) {

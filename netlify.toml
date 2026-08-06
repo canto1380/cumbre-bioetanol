@@ -5,6 +5,10 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# Desactiva Pretty URLs para evitar 301 /noticias → /noticias/
+[build.processing.html]
+  pretty_urls = false
+
 # Variables que DEBEN estar en Netlify UI también:
 # VITE_SITE_URL=https://conferenciasipaat.gob.ar
 # VITE_GOOGLE_SCRIPT_URL=...
