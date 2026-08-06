@@ -96,11 +96,22 @@ export function injectSocialMeta(html, meta) {
     .replace(/\s*<meta property="og:[^"]*" content="[^"]*" \/>/g, "")
     .replace(/\s*<meta name="twitter:[^"]*" content="[^"]*" \/>/g, "");
 
-  return withoutOldSocial
+  let next = withoutOldSocial
     .replace(
       /<meta name="description" content="[^"]*" \/>/,
       `<meta name="description" content="${escapeHtml(meta.description)}" />`
     )
     .replace(/<title>[^<]*<\/title>/, `<title>${escapeHtml(meta.title)}</title>`)
     .replace("</head>", `    ${socialTags}\n  </head>`);
+
+  // Contenido visible en el HTML inicial (antes de React).
+  // Ayuda a Google a no tratar /noticias como página vacía / soft 404.
+  if (meta.bodyHtml) {
+    next = next.replace(
+      /<div id="root"><\/div>/,
+      `<div id="root">${meta.bodyHtml}</div>`
+    );
+  }
+
+  return next;
 }

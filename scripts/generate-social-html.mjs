@@ -7,6 +7,7 @@ import {
   PAGE_SEO,
   buildAbsoluteAssetUrl,
   buildCanonicalUrl,
+  escapeHtml,
   formatSeoTitle,
   getSiteUrl,
   injectSocialMeta,
@@ -26,6 +27,45 @@ function findHashedAsset(prefix) {
     .find((file) => file.startsWith(prefix));
 
   return match ? `/assets/${match}` : null;
+}
+
+function buildNewsListBody(newsItems, description) {
+  const items = newsItems
+    .map(
+      (item) => `      <li>
+        <a href="/noticias/${item.id}">${escapeHtml(item.title)}</a>
+        <p>${escapeHtml(item.description)}</p>
+      </li>`
+    )
+    .join("\n");
+
+  return `
+    <main>
+      <h1>Todas las noticias</h1>
+      <p>${escapeHtml(description)}</p>
+      <ul>
+${items}
+      </ul>
+    </main>
+  `;
+}
+
+function buildArticleBody(item) {
+  const paragraphs = (item.content || [])
+    .map((p) => `      <p>${escapeHtml(p)}</p>`)
+    .join("\n");
+
+  return `
+    <main>
+      <article>
+        <p><a href="/noticias">Noticias</a></p>
+        <h1>${escapeHtml(item.title)}</h1>
+        <p><time>${escapeHtml(item.date || "")}</time></p>
+        <p>${escapeHtml(item.description)}</p>
+${paragraphs}
+      </article>
+    </main>
+  `;
 }
 
 function writeRouteHtml(relativeDir, meta) {
@@ -65,6 +105,7 @@ function main() {
     url: buildCanonicalUrl(PAGE_SEO.news.path),
     image: defaultImage,
     type: PAGE_SEO.news.type,
+    bodyHtml: buildNewsListBody(news, PAGE_SEO.news.description),
   };
 
   fs.writeFileSync(
@@ -82,9 +123,11 @@ function main() {
       url: buildCanonicalUrl(`/noticias/${item.id}`),
       image: buildAbsoluteAssetUrl(item.image, siteUrl),
       type: "article",
+      bodyHtml: buildArticleBody(item),
     });
   });
 
+  console.log(`Meta social + HTML semántico generado (${news.length + 2} rutas, ${siteUrl}).`);
 }
 
 main();
