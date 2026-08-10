@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import Badge from "../../ui/Badge/Badge.jsx";
 
 export default function CardNews({ news }) {
-  const to = `${news.url}/${news.id}`;
+
+  const to = `${news.url}/${news.slug}`;
 
   return (
     <article className="bio-news-card">

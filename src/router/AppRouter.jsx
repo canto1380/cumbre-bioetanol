@@ -20,7 +20,7 @@ function AppRouter() {
         <Route element={<MainLayout />}>
           <Route path='/' element={<HomePage />} />
           <Route path='/noticias' element={<NewsPage />} />
-          <Route path='/noticias/:id' element={<NewPage />} />
+          <Route path='/noticias/:slug' element={<NewPage />} />
           <Route
             path="*"
             element={<NotFoundPage />}

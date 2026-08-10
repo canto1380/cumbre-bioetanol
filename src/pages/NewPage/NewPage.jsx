@@ -6,48 +6,57 @@ import Badge from "../../components/ui/Badge/Badge";
 import Button from "../../components/ui/Buttons";
 import { Seo, buildCanonicalUrl } from "../../seo";
 import newsData from "../../../public/data/novedades.json";
+import NotFoundPage from "../NotFound/NotFoundPage";
 
 function NewPage() {
-  const { id } = useParams();
+  const { slug } = useParams();
   const navigate = useNavigate();
 
   const news = useMemo(
-    () => newsData.find((item) => String(item.id) === String(id)),
-    [id]
+    () => {
+      const news = newsData.find((item) => String(item.slug) === String(slug));
+      if (!news) {
+        navigate("/noticias");
+      }
+      return news;
+
+    },
+    [slug]
   );
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]);
+  }, [slug]);
 
   if (!news) {
     return (
-      <section className="bio-article">
-        <Seo
-          title="Noticia no encontrada"
-          description="La novedad solicitada no existe o fue eliminada."
-          path={`/noticias/${id}`}
-          noindex
-        />
-        <div className="bio-article-empty">
-          <h1>Noticia no encontrada</h1>
-          <p>La novedad que buscás no existe o fue eliminada.</p>
-          <div className="bio-article-actions">
-            <Button onClick={() => navigate("/noticias")}>
-              Ver todas las noticias
-            </Button>
-            <Link to="/" className="bio-article-back">
-              Volver al inicio
-            </Link>
-          </div>
-        </div>
-      </section>
+      <NotFoundPage />
+      // <section className="bio-article">
+      //   <Seo
+      //     title="Noticia no encontrada"
+      //     description="La novedad solicitada no existe o fue eliminada."
+      //     path={`/noticias/${slug}`}
+      //     noindex
+      //   />
+      //   <div className="bio-article-empty">
+      //     <h1>Noticia no encontrada</h1>
+      //     <p>La novedad que buscás no existe o fue eliminada.</p>
+      //     <div className="bio-article-actions">
+      //       <Button onClick={() => navigate("/noticias")}>
+      //         Ver todas las noticias
+      //       </Button>
+      //       <Link to="/" className="bio-article-back">
+      //         Volver al inicio
+      //       </Link>
+      //     </div>
+      //   </div>
+      // </section>
     );
   }
 
   const paragraphs = news.content?.length ? news.content : [];
 
-  const articlePath = `/noticias/${news.id}`;
+  const articlePath = `/noticias/${news.slug}`;
 
   return (
     <article className="bio-article">
