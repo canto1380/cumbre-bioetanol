@@ -68,7 +68,7 @@ function main() {
     { path: "/" },
     { path: "/noticias" },
     ...news.map((item) => ({
-      path: `/noticias/${item.id}`,
+      path: `/noticias/${item.slug}`,
       lastmod: parseSpanishDate(item.date),
     })),
   ];

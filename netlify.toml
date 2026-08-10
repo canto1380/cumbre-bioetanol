@@ -31,14 +31,39 @@
   force = true
 
 [[redirects]]
-  from = "/noticias/:id"
-  to = "/noticias/:id.html"
+  from = "/noticias/1"
+  to = "/noticias/cumbre-regional-en-tucuman-energia-cultivada-el-bioetanol-en-el-desarrollo-del-noa"
+  status = 301
+
+[[redirects]]
+  from = "/noticias/2"
+  to = "/noticias/la-cumbre-de-biocombustible-reafirmo-el-rol-del-bioetanol-para-el-desarrollo-economico-y-ambiental-del-noa"
+  status = 301
+
+[[redirects]]
+  from = "/noticias/3"
+  to = "/noticias/el-oficialismo-presento-un-nuevo-proyecto-de-ley-de-biocombustibles-mas-cortes-precios-por-paridad-y-libre-negociacion-entre-privados"
+  status = 301
+
+[[redirects]]
+  from = "/noticias/4"
+  to = "/noticias/el-gobierno-permitira-agregarles-mas-bioetanol-a-las-naftas"
+  status = 301
+
+[[redirects]]
+  from = "/noticias/5"
+  to = "/noticias/el-reciente-incremento-ratifica-la-necesidad-de-avanzar-hacia-un-mayor-corte-de-bioetanol"
+  status = 301
+
+[[redirects]]
+  from = "/noticias/:slug"
+  to = "/noticias/:slug.html"
   status = 200
   force = true
 
 [[redirects]]
-  from = "/noticias/:id/"
-  to = "/noticias/:id.html"
+  from = "/noticias/:slug/"
+  to = "/noticias/:slug.html"
   status = 200
   force = true
 

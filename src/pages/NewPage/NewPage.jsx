@@ -31,26 +31,7 @@ function NewPage() {
   if (!news) {
     return (
       <NotFoundPage />
-      // <section className="bio-article">
-      //   <Seo
-      //     title="Noticia no encontrada"
-      //     description="La novedad solicitada no existe o fue eliminada."
-      //     path={`/noticias/${slug}`}
-      //     noindex
-      //   />
-      //   <div className="bio-article-empty">
-      //     <h1>Noticia no encontrada</h1>
-      //     <p>La novedad que buscás no existe o fue eliminada.</p>
-      //     <div className="bio-article-actions">
-      //       <Button onClick={() => navigate("/noticias")}>
-      //         Ver todas las noticias
-      //       </Button>
-      //       <Link to="/" className="bio-article-back">
-      //         Volver al inicio
-      //       </Link>
-      //     </div>
-      //   </div>
-      // </section>
+
     );
   }
 

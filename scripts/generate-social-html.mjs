@@ -33,7 +33,7 @@ function buildNewsListBody(newsItems, description) {
   const items = newsItems
     .map(
       (item) => `      <li>
-        <a href="/noticias/${item.id}">${escapeHtml(item.title)}</a>
+        <a href="/noticias/${item.slug}">${escapeHtml(item.title)}</a>
         <p>${escapeHtml(item.description)}</p>
       </li>`
     )
@@ -126,15 +126,15 @@ function main() {
   removeDirIndexHtml("noticias");
 
   news.forEach((item) => {
-    writeFlatHtml(`noticias/${item.id}`, {
+    writeFlatHtml(`noticias/${item.slug}`, {
       title: formatSeoTitle(item.title),
       description: item.description,
-      url: buildCanonicalUrl(`/noticias/${item.id}`),
+      url: buildCanonicalUrl(`/noticias/${item.slug}`),
       image: buildAbsoluteAssetUrl(item.image, siteUrl),
       type: "article",
       bodyHtml: buildArticleBody(item),
     });
-    removeDirIndexHtml(`noticias/${item.id}`);
+    removeDirIndexHtml(`noticias/${item.slug}`);
   });
 
   console.log(

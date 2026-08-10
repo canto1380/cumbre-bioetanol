@@ -1,8 +1,16 @@
 # 200! = rewrite forzado (sin 301). Evita Pretty URLs: /noticias → /noticias/
 /noticias           /noticias.html            200!
 /noticias/          /noticias.html            200!
-/noticias/:id       /noticias/:id.html        200!
-/noticias/:id/      /noticias/:id.html        200!
+
+# URLs viejas por id → slug (SEO)
+/noticias/1         /noticias/cumbre-regional-en-tucuman-energia-cultivada-el-bioetanol-en-el-desarrollo-del-noa  301
+/noticias/2         /noticias/la-cumbre-de-biocombustible-reafirmo-el-rol-del-bioetanol-para-el-desarrollo-economico-y-ambiental-del-noa  301
+/noticias/3         /noticias/el-oficialismo-presento-un-nuevo-proyecto-de-ley-de-biocombustibles-mas-cortes-precios-por-paridad-y-libre-negociacion-entre-privados  301
+/noticias/4         /noticias/el-gobierno-permitira-agregarles-mas-bioetanol-a-las-naftas  301
+/noticias/5         /noticias/el-reciente-incremento-ratifica-la-necesidad-de-avanzar-hacia-un-mayor-corte-de-bioetanol  301
+
+/noticias/:slug     /noticias/:slug.html      200!
+/noticias/:slug/    /noticias/:slug.html      200!
 
 # SPA fallback (no pisa archivos estáticos reales: favicon, assets, etc.)
 /*                  /index.html               200
