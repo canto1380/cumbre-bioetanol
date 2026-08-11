@@ -23,12 +23,10 @@
     "type": "PANEL 1",
     "title": "Marco regulatorio de los biocombustibles en Argentina.",
     "speaker": [
-      "Patricia Bullrich • Senadora Nacional (CABA).",
-      "Carolina Moisés • Vicepresidenta del Senado de la Nación (Jujuy).",
-      "Alejandra Vigo • Senadora Nacional (Córdoba).",
+      "Andrés Leone • Diputado Nacional (CABA).",
+      "Flavia Royón • Senadora Nacional (Salta).",
       "Beatriz Ávila • Senadora Nacional (Tucumán).",
-      "Sandra Mendoza • Senadora Nacional (Tucumán).",
-      "Flavia Royón • Senadora Nacional (Salta)."
+      "Sandra Mendoza • Senadora Nacional (Tucumán)."
     ],
     "moderador": "Claudio Molina • Especialista en biocombustibles."
   },
@@ -66,6 +64,15 @@
   },
   {
     "id": 8,
+    "time": "14:00 - 14:15",
+    "type": "Videoconferencia",
+    "title": "",
+    "speaker": [
+      "Damiana Serafini • Especialista Internacional en SAF. Consulta de la empresa LanzaJet."
+    ]
+  },
+  {
+    "id": 9,
     "time": "14:00 - 14:45",
     "type": "PANEL 4",
     "title": "Los biocombustibles en el desarrollo productivo de Argentina.",
@@ -76,7 +83,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 10,
     "time": "14:45 - 15:30",
     "type": "PANEL 5",
     "title": "Bioetanol de caña de azúcar y sostenibilidad: desafíos y oportunidades en el NOA.",
@@ -90,7 +97,7 @@
     "moderador": "Sebastián Budeguer • Directorio del IPAAT."
   },
   {
-    "id": 10,
+    "id": 11,
     "time": "15:30",
     "type": "Cierre",
     "title": "Cierre de la II Cumbre de Bioetanol."
