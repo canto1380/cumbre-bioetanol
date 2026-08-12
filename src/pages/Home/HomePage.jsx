@@ -42,11 +42,19 @@ function HomePage() {
         type={seo.type}
         image={portadaNoticias}
         keywords={[
-          "bioetanol",
-          "cumbre bioetanol",
+          "II Cumbre de Bioetanol",
+          "inscripción cumbre bioetanol",
+          "cumbre bioetanol Tucumán",
+          "cumbre bioetanol 2026",
           "IPAAT",
+          "Hotel Catalinas",
+          "bioetanol",
           "biocombustibles",
-          "Tucumán",
+          "conferencias IPAAT",
+          "Bioetanol Argentina",
+          "Bioetanol Tucumán",
+          "Biocombustibles Argentina",
+          "Biocombustibles Tucumán",
         ]}
       >
         <script type="application/ld+json">

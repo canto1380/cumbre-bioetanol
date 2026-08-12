@@ -1,10 +1,10 @@
 export const SITE = {
   name: "2° Cumbre de Bioetanol",
   shortName: "Cumbre Bioetanol",
-  defaultTitle: "2° Cumbre de Bioetanol",
-  titleTemplate: "%s | 2° Cumbre de Bioetanol",
+  defaultTitle: "II Cumbre de Bioetanol IPAAT | Tucumán 21 de agosto 2026",
+  titleTemplate: "%s | II Cumbre de Bioetanol IPAAT",
   defaultDescription:
-    "II Cumbre de Bioetanol: encuentro nacional sobre bioetanol, políticas energéticas, innovación industrial e inscripción al evento en Tucumán, Argentina.",
+    "Inscribite a la II Cumbre de Bioetanol IPAAT en Tucumán. Encuentro nacional sobre bioetanol, biocombustibles y transición energética. Hotel Catalinas, 21 de agosto de 2026.",
   locale: "es_AR",
   language: "es",
   themeColor: "#1D7A4A",
@@ -58,14 +58,14 @@ export const PAGE_SEO = {
   home: {
     title: SITE.defaultTitle,
     description:
-      "Inscribite a la II Cumbre de Bioetanol. Conocé el cronograma, novedades del sector y participá del encuentro en Tucumán el 21 de agosto de 2026.",
+      "Inscripción abierta a la II Cumbre de Bioetanol IPAAT. Participá el 21 de agosto de 2026 en el Hotel Catalinas, Tucumán. Cronograma, paneles y novedades del sector bioetanol.",
     path: "/",
     type: "website",
   },
   news: {
     title: "Noticias",
     description:
-      "Novedades, anuncios y actualidad sobre la II Cumbre de Bioetanol y la industria del bioetanol en Argentina.",
+      "Noticias e inscripción sobre la II Cumbre de Bioetanol IPAAT en Tucumán: anuncios, biocombustibles y actualidad del sector en Argentina.",
     path: "/noticias",
     type: "website",
   },

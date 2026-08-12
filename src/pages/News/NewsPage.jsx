@@ -61,7 +61,14 @@ function NewsPage() {
         description={PAGE_SEO.news.description}
         path={PAGE_SEO.news.path}
         type={PAGE_SEO.news.type}
-        keywords={["noticias bioetanol", "novedades", "cumbre bioetanol"]}
+        keywords={[
+          "noticias II Cumbre de Bioetanol",
+          "cumbre bioetanol Tucumán",
+          "IPAAT bioetanol",
+          "biocombustibles Argentina",
+          "noticias de Bioetanol",
+          'noticias de biocombustibles',
+        ]}
       />
       <NewsHero />
       <NewsFilters

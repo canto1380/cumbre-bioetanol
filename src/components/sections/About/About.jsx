@@ -12,10 +12,8 @@ export function About() {
               Sobre el evento
             </Badge>
           }
-          title="Impulsando el bioetanol de caña"
-          subtitle="Este espacio de convergencia para líderes del sector público, privado y 
-          académico, con el propósito de consolidar el rol estratégico del bioetanol en la
-          matriz energética Argentina."
+          title="Impulsando el bioetanol de caña de azúcar"
+          subtitle="La II Cumbre de Bioetanol IPAAT reúne a líderes del sector público, privado y académico para consolidar el rol estratégico del bioetanol y los biocombustibles en la matriz energética de Argentina."
         />
         <div className="bio-about-grid">
           {/* Información */}

@@ -34,6 +34,9 @@
   /** GRADIENT PARA TITULO */
   --hero-gradient: linear-gradient(100deg, #A3E635, #22C55E);
 
+  /** GRADIENT PARA NOT FOUND */
+  --hero-gradient-404: linear-gradient(100deg, #A3E635, #91e0ae);
+
   /* Instagram */
   --instagram-gradient: linear-gradient(135deg,
       #f58529 0%,
