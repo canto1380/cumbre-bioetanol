@@ -16,7 +16,7 @@
   },
   {
     "id": 7,
-    "image": "/sponsors/leales.jpg",
+    "image": "/sponsors/Leales.png",
     "alt": "Ingenio Leales"
   },
   {
@@ -134,6 +134,11 @@
     "id": 26,
     "image": "/sponsors/otros/satca.jpg",
     "alt": "SATCA"
+  },
+  {
+    "id": 26,
+    "image": "/sponsors/otros/camara-bioetanol-maiz.png",
+    "alt": "Cámara de Bioetanol de Maíz"
   },
   {
     "id": 30,
