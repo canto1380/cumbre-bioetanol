@@ -135,11 +135,12 @@ export function InscriptionForm() {
 
         <div className="bio-inscription-row">
           <div className="bio-inscription-field">
-            <label htmlFor="telefono">Teléfono</label>
+            <label htmlFor="telefono">Teléfono *</label>
             <input
               id="telefono"
               type="tel"
               aria-invalid={Boolean(errors.telefono)}
+              maxLength={11}
               className={errors.telefono ? "error" : ""}
               {...register("telefono")}
             />

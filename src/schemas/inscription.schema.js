@@ -22,11 +22,12 @@ export const inscriptionSchema = z.object({
   cargo: z.string().optional(),
   telefono: z
     .string()
-    .optional()
-    .refine(
-      (value) => !value || phoneRegex.test(value),
-      "Ingrese un teléfono válido."
-    ),
+    .min(9, "El teléfono debe tener al menos 9 caracteres.")
+    .max(11, "El teléfono no puede tener más de 11 caracteres."),
+    // .refine(
+    //   (value) => !value || phoneRegex.test(value),
+    //   "Ingrese un teléfono válido."
+    // ),
   provincia: z.string().optional(),
   observaciones: z.string().optional(),
 });
