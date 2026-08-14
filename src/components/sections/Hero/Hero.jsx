@@ -12,6 +12,7 @@ import { HERO_EVENT } from "./hero.constant";
 import heroSlides from "../../../../public/data/slider.json";
 import useHeroSlider from "./useHeroSlider";
 import { scroller } from 'react-scroll'
+import { openLivestreamModal } from '../../../config/livestream.config'
 
 function Hero() {
   const { activeIndex, goTo, goNext, goPrev } = useHeroSlider(heroSlides.length);
@@ -86,6 +87,15 @@ function Hero() {
               >
                 Ver cronograma
               </Link>
+              
+              <Button
+                type="button"
+                className="bio-btn-hero-ghost"
+                onClick={openLivestreamModal}
+                size="xl"
+              >
+                Ver transmisión
+              </Button>
             </div>
           </div>
         </div>

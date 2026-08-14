@@ -2,6 +2,7 @@ import Navbar from "../components/layout/Navbar/Navbar";
 import { Footer } from "../components/layout/Footer/Footer";
 import { Outlet, useLocation } from "react-router-dom";
 import { TopBar } from "../components/layout/TopBar/TopBar";
+import { LivestreamModal } from "../components/Livestream/LivestreamModal";
 
 function MainLayout() {
   const { pathname } = useLocation();
@@ -15,6 +16,7 @@ function MainLayout() {
         <Outlet />
       </main>
       <Footer />
+      <LivestreamModal />
     </>
   );
 }
