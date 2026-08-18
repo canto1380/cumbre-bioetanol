@@ -90,7 +90,7 @@ function Hero() {
               
               <Button
                 type="button"
-                className="bio-btn-hero-ghost"
+                className="btn-enabled bio-btn-hero-ghost"
                 onClick={openLivestreamModal}
                 size="xl"
               >

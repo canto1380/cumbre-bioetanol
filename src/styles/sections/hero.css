@@ -211,6 +211,11 @@
   transform: translateY(-1px);
 }
 
+/* .btn-enabled {
+  visibility: hidden;
+  display: none !important;
+} */
+
 /* =========================
    Controles del slider
 ========================= */
@@ -292,6 +297,7 @@
     flex-wrap: wrap;
     gap: 1.5rem;
   }
+
 }
 
 @media (min-width: 1024px) {
@@ -318,4 +324,11 @@
   text-align: center;
   font-size: 2rem;
   color: var(--color-text);
+}
+
+@media (max-width: 576px) {
+  .btn-enabled {
+    visibility: hidden;
+    display: none !important;
+  }
 }
