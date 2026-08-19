@@ -13,7 +13,7 @@ export function InscriptionData() {
           </Badge>
         }
         title='Reservá tu lugar'
-        subtitle='Completá el formulario. Se te enviará un correo de confirmación.'
+        subtitle='Reservá tu lugar en la II Cumbre de Bioetanol. Cupos limitados.'
       />
 
       <div className="bio-inscription-benefits">

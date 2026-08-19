@@ -28,7 +28,10 @@
       "Beatriz Ávila • Senadora Nacional (Tucumán).",
       "Sandra Mendoza • Senadora Nacional (Tucumán)."
     ],
-    "moderador": "Claudio Molina • Especialista en biocombustibles."
+    "moderadores": [
+      "Eduardo Castro • Sec. de Estado de Producción - Presidente del IPAAT.",
+      "Claudio Molina • Especialista en biocombustibles."
+    ]
   },
   {
     "id": 5,
@@ -44,6 +47,9 @@
     "speaker": [
       "Agustín Torroba • Especialista Internacional de Biocombustibles - IICA. Sec. ejecutivo de Coalición de Biocombustibles Líquidos - CPBIO.",
       "Marcia Valeria de Souza Alves • Coord. de Etanol y Biometano - Secretaría Nacional de Petróleo, Gas Natural y Biocombustibles - Ministerio de Minas y Energía (Brasil)."
+    ],
+    "moderadores": [
+      "Jorge Etchandy • Gerente del IPAAT"
     ]
   },
   {
@@ -54,6 +60,9 @@
     "speaker": [
       "Jorge Hilbert • Director y Fundador de Energy & Environmental Consulting Services - Especialista en bioenergía.",
       "Sabine Papendieck • Socia Gerente Estrateco - Coordinadora del Grupo de Expertos CPBIO - Coordinadora del Programa Argentino de Cabono Neutro."
+    ],
+    "moderadores": [
+      "Jorge Soria • Jefe del Área Técnica y Operativa - IPAAT"
     ]
   },
   {
@@ -68,7 +77,7 @@
     "type": "Videoconferencia",
     "title": "",
     "speaker": [
-      "Damiana Serafini • Consultora de la empresa LanzaJet (producción de SAF a partir del bioetanol)."
+      "Damiana Serafini • Especialista Internacional en SAF."
     ]
   },
   {
@@ -79,8 +88,10 @@
     "speaker": [
       "Martín Giaccio • Subsecretario de Economías Regionales y de Pequeños y Medianos Productores - Ministerio de Economía de la Nación.",
       "Mariano Santillán • Director de Biocombustibles y Bioenergías - Córdoba.",
-      "Verónica Geese • Asesora en políticas de energía y sostenibilidad - Ex Secretaría de Estado de Energía de la Provincia de Santa Fe - Argentina.",
       "Patrick Adam • Director Ejecutivo de la Cámara de Bioetanol de Maíz - Argentina."
+    ],
+    "moderadores": [
+      "Verónica Geese •  Asesora en políticas de energía y sostenibilidad - Ex Secretaría de Estado de Energía de la Provincia de Santa Fe - Argentina."
     ]
   },
   {
@@ -95,7 +106,7 @@
       "Matías Rosselli • Ingenio Ledesma - Jujuy.",
       "Santiago Blaquier • Ingenio Concepción - Tucumán."
     ],
-    "moderador": "Sebastián Budeguer • Directorio del IPAAT."
+    "moderadores": ["Sebastián Budeguer • Directorio del IPAAT."]
   },
   {
     "id": 11,

@@ -13,7 +13,7 @@ export function ScheduleCard({
   title,
   speaker,
   description,
-  moderador,
+  moderadores,
 }) {
   return (
     <motion.article
@@ -65,10 +65,12 @@ export function ScheduleCard({
 
               ))
             )}
-            {moderador && (
-              <div className="bio-schedule-moderador" >
-                <span>Moderador: {moderador}</span>
-              </div>
+            {moderadores && moderadores.length > 0 && (
+              moderadores.map((d, i) => (
+                <div key={i} className="bio-schedule-moderador" >
+                  <span>Moderador: {d}</span>
+                </div>
+              ))
             )}
           </div>
 
