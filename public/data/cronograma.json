@@ -30,6 +30,7 @@
     ],
     "moderadores": [
       "Eduardo Castro • Sec. de Estado de Producción - Presidente del IPAAT.",
+      "Jorge Etchandy • Gerente del IPAAT",
       "Claudio Molina • Especialista en biocombustibles."
     ]
   },
@@ -75,18 +76,18 @@
     "id": 8,
     "time": "14:00 - 14:15",
     "type": "Videoconferencia",
-    "title": "",
+    "title": "Del Bioetanol a SAF: Un nuevo mercado global para el bioetanol de caña de azúcar.",
     "speaker": [
       "Damiana Serafini • Especialista Internacional en SAF."
     ]
   },
   {
     "id": 9,
-    "time": "14:15 - 14:45",
+    "time": "14:15 - 15:00",
     "type": "PANEL 4",
     "title": "Los biocombustibles en el desarrollo productivo de Argentina.",
     "speaker": [
-      "Martín Giaccio • Subsecretario de Economías Regionales y de Pequeños y Medianos Productores - Ministerio de Economía de la Nación.",
+      "Martín Giaccio • Subsecretario de Economías Regionales y de Pequeños y Medianos Productores - Ministerio de Economía de la Nación - CABA.",
       "Mariano Santillán • Director de Biocombustibles y Bioenergías - Córdoba.",
       "Patrick Adam • Director Ejecutivo de la Cámara de Bioetanol de Maíz - Argentina."
     ],
@@ -96,21 +97,21 @@
   },
   {
     "id": 10,
-    "time": "14:45 - 15:30",
+    "time": "15:00 - 15:45",
     "type": "PANEL 5",
     "title": "Bioetanol de caña de azúcar y sostenibilidad: desafíos y oportunidades en el NOA.",
     "speaker": [
-      "Catalina Rocchia Ferro • Ingenio La Florida - Tucumán.",
-      "José Alarcón • Ingenio Seaboard - Salta.",
       "Sebastián Budeguer • Ingenio Leales - Tucumán.",
+      "Catalina Rocchia Ferro • Ingenio La Florida - Tucumán.",
+      "Santiago Blaquier • Ingenio Concepción - Tucumán.",
       "Matías Rosselli • Ingenio Ledesma - Jujuy.",
-      "Santiago Blaquier • Ingenio Concepción - Tucumán."
+      "José Alarcón • Ingenio Seaboard - Salta."
     ],
     "moderadores": ["Sebastián Budeguer • Directorio del IPAAT."]
   },
   {
     "id": 11,
-    "time": "15:30",
+    "time": "15:45",
     "type": "Cierre",
     "title": "Cierre de la II Cumbre de Bioetanol."
   }
