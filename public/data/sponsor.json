@@ -139,5 +139,12 @@
     "id": 30,
     "image": "/sponsors/otros/inti.png",
     "alt": "Instituto Nacional de Tecnología Industrial"
+  },
+  {
+    "id": 31,
+    "institucion": "Scania",
+    "tipo": "Empresa Privada",
+    "image": "/sponsors/otros/scania.png",
+    "alt": "Scania"
   }
 ]
