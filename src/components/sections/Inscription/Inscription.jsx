@@ -8,7 +8,7 @@ export function Inscription() {
       <div className="bio-inscription-container">
         <InscriptionData />
         <InscriptionCTA />
-        <InscriptionForm />
+        {/* <InscriptionForm /> */}
       </div>
     </section>
   )
