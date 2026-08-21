@@ -5,7 +5,7 @@ export const LIVESTREAM = {
     import.meta.env.VITE_YOUTUBE_STREAM_ID || "",
   youtubeChannelUrl: "https://www.youtube.com/@ipaat_tucuman/live",
   startAt: "2026-08-21T08:30:00-03:00",
-  endAt: "2026-08-21T16:00:00-03:00",
+  endAt: "2026-08-21T16:40:00-03:00",
   openEventName: "bio:open-livestream",
 };
 
